@@ -23,18 +23,9 @@
 
 ### Genre
 
-
 ### World
 
-
 ### Characters
-
-
-### Environments
-
-
-### Characters
-
 
 ### Environments
 
