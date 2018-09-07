@@ -28,13 +28,13 @@ The game takes place in a time inspired by the 16th-17th century on an island th
 ### Characters
 The player - protagonist, one of the survivors of the village attack
 
-The Shaman, Ukk - leader of the tribe, survivor of the village attack
+Ukk, the Shaman - leader of the tribe, survivor of the village attack
 
 The villagers - other survivors of the village attack
 
 The pirates - crew of the captain, attacked the village
 
-Captain Skott Wolfschlegelsteinhausenbergerdorft, Jr. - leader of the pirates, seeking the islands treasures in an effort to gain fame and power
+Captain Skott Wolfschlegelsteinhausenbergerdorft, Jr. - leader of the pirates, seeking the island's treasures in an effort to gain fame and power
 ### Environments
 Tropical jungle island, dormant volcano
 ### Gameplay
