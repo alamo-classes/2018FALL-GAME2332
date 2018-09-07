@@ -60,12 +60,14 @@
 
 ### Music
 
+---
 ## User Interface
 
 ### Start Screen
 
+---
 ## Game Controls
-
+---
 ## Market Analysis
 
 ### Target Market
@@ -73,7 +75,7 @@
 ### Top Performers
 
 ### Feature Comparison
-
+---
 ## Technical Analysis
 
 ### Features
@@ -89,9 +91,9 @@
 ### Estimated Resources
 
 ### Estimated Schedule
-
+---
 ## Legal Analysis
-
+---
 ## Costs
 
 ### Resource Costs
