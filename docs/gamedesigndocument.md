@@ -22,9 +22,9 @@
 ## Story
 On a dark and stormy night, an island village is attacked by a band of pirates seeking the island's treasures of power. So that he may be spared, a young boy is told to seek shelter in the village shrine. In the aftermath of the attack, the boy witnesses the destruction left behind and prays to the island gods. They answer his prayers and bestow upon him a communicative amulet, with instructions to gather the treasures before the pirates.
 ### Genre
-
+2D adventure platformer
 ### World
-
+The game takes place in a time inspired by the 16th-17th century on an island that is undiscovered by civilization at large.
 ### Characters
 
 ### Environments
