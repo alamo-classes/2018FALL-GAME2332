@@ -38,7 +38,7 @@ Captain Skott Wolfschlegelsteinhausenbergerdorft, Jr. - leader of the pirates, s
 ### Environments
 Tropical jungle island, dormant volcano
 ### Gameplay
-
+Top-down 2D adventure game with simple movements and controls, RPG elements, and puzzles to solve throughout the story.
 ### Mechanics
 
 #### Collision Detection
