@@ -26,11 +26,15 @@ On a dark and stormy night, an island village is attacked by a band of pirates s
 ### World
 The game takes place in a time inspired by the 16th-17th century on an island that is undiscovered by civilization at large.
 ### Characters
-
+The player - protagonist, one of the survivors of the village attack
+The Shaman, Ukk - leader of the tribe, survivor of the village attack
+The villagers - other survivors of the village attack
+The pirates - crew of the captain, attacked the village
+Captain Skott Wolfschlegelsteinhausenbergerdorft, Jr. - leader of the pirates, seeking the islands treasures in an effort to gain fame and power
 ### Environments
-
+Tropical jungle island, dormant volcano
 ### Gameplay
- 
+
 ### Mechanics
 
 #### Collision Detection
