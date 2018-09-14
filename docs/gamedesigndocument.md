@@ -42,22 +42,15 @@ Top-down 2D adventure game with simple movements and controls, RPG elements, and
 ### Mechanics
 
 #### Collision Detection
-
-#### Scoring
+Soft Collision for enemies and hard collision for everything else
 
 #### AI
 
 #### Game Over
-* Failure Conditions:
+* Failure Conditions: The player dies while his life counter is at zero.
    
-
 ##### Win Scenario
-* Win Conditions:
-
-
-##### Loss Scenario
-* Failure Conditions:
-
+* Win Conditions: The player collects all the artifacts and defeats the final boss
 
 ### Level
 
