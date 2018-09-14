@@ -1,4 +1,4 @@
-Unity version: 2018.4.2f1
+Unity version: 2018.2.4f1
 
 Github for Unity version: 1.03
 
