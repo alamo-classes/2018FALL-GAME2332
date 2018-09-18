@@ -4,9 +4,24 @@ using UnityEngine;
 
 public class DummyPlayerController : MonoBehaviour
 {
+   Rigidbody2D playerRigidbody;
+   public float speed = 5f;
+   void Awake()
+   {
+      playerRigidbody = GetComponent<Rigidbody2D>();
+      
+   }
 
-	// Terrible horrible code, but works for small demo to demostrate camera movement when player moves from screen to screen
-	void Update () {
-        this.transform.position += new Vector3(Input.GetAxis("Horizontal") * 5f * Time.deltaTime, 0);
-    }
+   void FixedUpdate()
+   {
+      float horizontal = Input.GetAxisRaw("Horizontal");
+      float vertical = Input.GetAxisRaw("Vertical");
+      Move(horizontal, vertical);
+   }
+
+   void Move(float h, float v)
+   {
+      Vector2 movement = new Vector2(h, v);
+      playerRigidbody.AddForce(movement * speed);
+   }
 }
