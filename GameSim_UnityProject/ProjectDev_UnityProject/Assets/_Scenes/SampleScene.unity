@@ -471,46 +471,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_Mass
-      value: 1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_LinearDrag
-      value: 6.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_AngularDrag
-      value: 4.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 114755878612912766, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: speed
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50775401485496168, guid: fe39e00c552ffce46877d53b5da1e1f0,
-        type: 2}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe39e00c552ffce46877d53b5da1e1f0, type: 2}
   m_IsPrefabAsset: 0
