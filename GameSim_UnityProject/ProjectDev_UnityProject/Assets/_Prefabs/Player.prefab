@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 61015909524525122}
   - component: {fileID: 50775401485496168}
   - component: {fileID: 114755878612912766}
+  - component: {fileID: 114504581532761814}
   m_Layer: 0
-  m_Name: Dummy Player
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,6 +89,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.14}
   m_EdgeRadius: 0
+--- !u!114 &114504581532761814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570813852507230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b914cdb5456494f8f6a9255322c646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114755878612912766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  dashSpeed: 800
+  dashSpeed: 400
   timeBetweenDashes: 2
 --- !u!212 &212323944088977610
 SpriteRenderer:
