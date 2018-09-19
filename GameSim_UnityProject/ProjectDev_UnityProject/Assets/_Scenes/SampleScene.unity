@@ -160,6 +160,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67539e410cffab6408f9e040ab0801ad, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &169018258
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +279,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &736536897
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636348997289818, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_Name
+      value: Healing Orb (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008690747970988, guid: 254e99c1e1773914a81d0471ac498520,
+        type: 2}
+      propertyPath: healingPoints
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &777736661
 Prefab:
   m_ObjectHideFlags: 0
@@ -504,3 +597,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1993109743
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167095368583336, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636348997289818, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+      propertyPath: m_Name
+      value: Healing Orb (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+  m_IsPrefabAsset: 0
