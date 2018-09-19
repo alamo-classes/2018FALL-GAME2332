@@ -68,6 +68,14 @@ Soft Collision for enemies and hard collision for everything else
 
 ---
 ## Game Controls
+W - Move Up
+A - Move Left
+S - Move Down
+D - Move Right
+Space Bar - Dash in current direction
+Tab - Open Inventory
+Left Click - Attack/Select Item
+Right Click - Use Item
 ---
 ## Market Analysis
 
