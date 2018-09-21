@@ -24,17 +24,17 @@ On a dark and stormy night, an island village is attacked by a band of pirates s
 ### Genre
 2D adventure platformer
 ### World
-The game takes place in a time inspired by the 16th-17th century on an island that is undiscovered by civilization at large.
+The game takes place in a time inspired by the 16th-17th century on an island that is undiscovered by civilization at large. The island is tropical with a dormant volcano. Aside from the main village, there is a smaller village built around the shrine to the gods. After the main village is attacked by the pirates, the survivors seek refuge in the smaller village and improve its structure.
 ### Characters
-The player - protagonist, one of the survivors of the village attack
+The player - protagonist, one of the survivors of the village attack.
 
-Ukk, the Shaman - leader of the tribe, survivor of the village attack
+Ukk the Shaman - leader of the tribe, survivor of the village attack.
 
-The villagers - other survivors of the village attack
+The villagers - other survivors of the village attack.
 
-The pirates - crew of the captain, attacked the village
+The pirates - crew of the captain, attacked the village.
 
-Captain Skott Wolfschlegelsteinhausenbergerdorft, Jr. - leader of the pirates, seeking the island's treasures in an effort to gain fame and power
+Captain Skott Wolfschlegelsteinhausenbergerdorft, Jr. - leader of the pirates, seeking the island's treasures in an effort to gain fame and power.
 ### Environments
 Tropical jungle island, dormant volcano
 ### Gameplay
@@ -82,7 +82,8 @@ Tab - Open Inventory
 
 Left Click - Attack/Select Item
 
-Right Click - Use Item  
+Right Click - Use Item
+
 ---
 ## Market Analysis
 
