@@ -11,15 +11,8 @@ public class HealthOrb : MonoBehaviour {
         this.transform.localScale *= healingPoints;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public float HealingPoints ( )
     {
-        GameObject obj = other.gameObject;
-        PlayerHealth health = other.GetComponent<PlayerHealth>();
-        if ( health )
-        {
-            health.addHealth(healingPoints);
-            Destroy(gameObject);
-        }
+        return healingPoints;
     }
-
 }
