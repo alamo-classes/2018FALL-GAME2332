@@ -15,4 +15,17 @@ public class PlayerHealth : MonoBehaviour {
 	{
 		health -= damage;
 	}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        GameObject obj = other.gameObject;
+        HealthOrb healingOrb = other.GetComponent<HealthOrb>();
+        if (healingOrb)
+        {
+            addHealth(healingOrb.HealingPoints());
+            Destroy(other.gameObject);
+        }
+    }
+
+
 }
