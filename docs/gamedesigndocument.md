@@ -54,6 +54,14 @@ Soft Collision for enemies and hard collision for everything else
 
 ### Level
 
+#### Key Items
+* Sword - Subtracts enemy health
+* Stealth - Reduce player detection range
+* Double Dash - Gives the player a second dash
+* Shield - Player becomes immobile but can't take any damage
+* Bow - Subtracts enemy health from a distance if projectile hits
+* Light Source - Provides light to dark areas
+* Magical Sight - Reveal hidden areas on the Island
 
 ### Art
 
