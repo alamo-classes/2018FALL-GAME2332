@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
    Rigidbody2D playerRigidbody;
+   Animator playerAnimator;
    public float speed = 5f;
    public float dashSpeed = 10f;
    public float timeBetweenDashes = 1f;
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
    void Awake()
    {
       playerRigidbody = GetComponent<Rigidbody2D>();
+      playerAnimator = GetComponent<Animator>();
       timer = timeBetweenDashes;
    }
 
@@ -29,6 +31,9 @@ public class PlayerController : MonoBehaviour
 
    void Move(float h, float v)
    {
+      playerAnimator.SetFloat("horizontal", h);
+      playerAnimator.SetFloat("vertical", v);
+
       Vector2 movement = new Vector2(h, v);
       playerRigidbody.AddForce(movement * speed);
    }
