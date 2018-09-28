@@ -86,11 +86,13 @@ D - Move Right
 
 Space Bar - Dash in current direction
 
-Tab - Open Inventory
+Q - Previous Item
 
-Left Click - Attack/Select Item
+E - Next Item
 
-Right Click - Use Item
+J - Attack
+
+K - Use Item
 
 ---
 ## Market Analysis
