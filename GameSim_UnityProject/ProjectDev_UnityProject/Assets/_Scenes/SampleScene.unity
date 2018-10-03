@@ -214,6 +214,21 @@ Prefab:
       propertyPath: route.Array.data[1]
       value: 
       objectReference: {fileID: 2142960754}
+    - target: {fileID: 114075375109976398, guid: 431854977eab01b4cb0957719fd0fdad,
+        type: 2}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61031283387967134, guid: 431854977eab01b4cb0957719fd0fdad,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 61031283387967134, guid: 431854977eab01b4cb0957719fd0fdad,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 431854977eab01b4cb0957719fd0fdad, type: 2}
   m_IsPrefabAsset: 0
@@ -259,6 +274,36 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &348775060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1365795171898284, guid: 431854977eab01b4cb0957719fd0fdad,
+    type: 2}
+  m_PrefabInternal: {fileID: 141846280}
+--- !u!61 &348775066
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348775060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.14}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +722,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4467077531407304, guid: fe39e00c552ffce46877d53b5da1e1f0, type: 2}
       propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504581532761814, guid: fe39e00c552ffce46877d53b5da1e1f0,
+        type: 2}
+      propertyPath: health
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504581532761814, guid: fe39e00c552ffce46877d53b5da1e1f0,
+        type: 2}
+      propertyPath: invulnerableTime
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []

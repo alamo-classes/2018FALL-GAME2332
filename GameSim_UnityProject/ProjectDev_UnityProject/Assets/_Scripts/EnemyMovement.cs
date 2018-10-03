@@ -9,7 +9,8 @@ public class EnemyMovement : MonoBehaviour
    bool inRange;
    Transform player;
    public Transform[] route;
-   private int routeDest = 0;
+   private int currentRouteDest;
+   private int nextRouteDest;
 
    void Start()
    {
@@ -37,8 +38,9 @@ public class EnemyMovement : MonoBehaviour
       if (route.Length == 0)
          return;
 
-      transform.position = Vector2.MoveTowards(transform.position, route[routeDest].position, speed * Time.deltaTime);
+      transform.position = Vector2.MoveTowards(transform.position, route[nextRouteDest].position, speed * Time.deltaTime);
 
-      routeDest = (routeDest + 1) % route.Length;
+      currentRouteDest = nextRouteDest;
+      nextRouteDest = (currentRouteDest + 1) % route.Length;
    }
 }

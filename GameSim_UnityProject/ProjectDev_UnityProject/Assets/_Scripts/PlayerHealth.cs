@@ -6,6 +6,18 @@ public class PlayerHealth : MonoBehaviour
 {
 
    public float health;
+   bool isVulnerable = true;
+   float timer;
+   public float invulnerableTime;
+
+   public void Update()
+   {
+      timer += Time.deltaTime;
+      if (timer > invulnerableTime)
+         isVulnerable = true;
+      else
+         isVulnerable = false;
+   }
 
    public void addHealth(float heal = 1)
    {
@@ -29,9 +41,10 @@ public class PlayerHealth : MonoBehaviour
          Destroy(other.gameObject);
       }
 
-      if (attack)
+      if (attack && isVulnerable)
       {
          loseHealth(attack.attackDamage);
+         timer = 0f;
       }
    }
 
