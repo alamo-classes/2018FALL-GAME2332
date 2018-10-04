@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
    public float dashSpeed = 10f;
    public float timeBetweenDashes = 1f;
    float timer;
+   bool doubleDash = false;
+   int dashCount;
 
    void Awake()
    {
@@ -46,6 +48,15 @@ public class PlayerController : MonoBehaviour
       {
          playerRigidbody.AddForce(movement * dashSpeed);
          timer = 0f;
+      }
+   }
+
+   void OnTriggerEnter2D(Collider2D other)
+   {
+      if (other.CompareTag("DoubleDash"))
+      {
+         doubleDash = true;
+         Destroy(other.gameObject);
       }
    }
 }
