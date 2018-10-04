@@ -8,7 +8,8 @@ public class EnemyHealth : MonoBehaviour {
 
 	void Update()
 	{
-		Debug.Log("EnemyHealth: " + health);
+		if(health <= 0)
+			Destroy(gameObject);
 	}
 
 	public void AddHealth(float heal = 1)
