@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 95345262632747666}
   - component: {fileID: 114772949304913474}
   - component: {fileID: 114629886539912364}
+  - component: {fileID: 114772501882357472}
   m_Layer: 0
   m_Name: AnimatedPlayer
   m_TagString: Player
@@ -190,6 +191,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   invulnerableTime: 0
+  canTakeDamage: 1
+--- !u!114 &114772501882357472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419422095631852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c7ff1efb78fc64fa9db174345e032c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTime: 2
+  coolDownTime: 5
 --- !u!114 &114772949304913474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +219,7 @@ MonoBehaviour:
   speed: 40
   dashSpeed: 400
   timeBetweenDashes: 2
+  canMove: 1
   dir: 0
 --- !u!212 &212036851722317274
 SpriteRenderer:
