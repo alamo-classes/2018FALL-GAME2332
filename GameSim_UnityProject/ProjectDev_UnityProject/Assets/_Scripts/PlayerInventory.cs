@@ -4,21 +4,47 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour 
 {
-	ArrayList inventory = new ArrayList();
-	//Item inHand = null;
+	Item[] inventory = new Item[9];
+	int loadPos = 0;
+	int handPos = 0;
+	Item inHand = null;
 		
+	void Update()
+	{
+		//Q & E Switch
+		if(Input.GetKeyDown(KeyCode.Q))
+		{
+			if(handPos == 0)
+				handPos = inventory.Length - 1;
+			else
+				handPos--;
+
+			inHand = inventory[handPos];
+		}
+
+		if(Input.GetKeyDown(KeyCode.E))
+		{
+			if(handPos == inventory.Length - 1)
+				handPos = 0;
+			else 
+				handPos++;
+
+			inHand = inventory[handPos];
+		}
+	
+		//if 'K' -> use
+		if(Input.GetKeyDown(KeyCode.K))
+		{
+			inHand.Use();
+		}
+	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "Item"/* and Action Key*/)
+		if(other.tag == "KeyItem")
 		{
-			inventory.Add(other);
+			inventory[loadPos] = other.gameObject.GetComponent<Item>();
+			loadPos++;
 		}
 	}
-		
-	//Select From Inventory
-
-	//DeSelect from Inventory
-
-
 }
