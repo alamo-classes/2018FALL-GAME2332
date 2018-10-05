@@ -29,6 +29,7 @@ public class Arrow : MonoBehaviour
       {
          other.gameObject.GetComponent<EnemyHealth>().RemoveHealth(damage);
          Debug.Log("hit Enemy");
+         Destroy(gameObject);
       }
    }
 }
