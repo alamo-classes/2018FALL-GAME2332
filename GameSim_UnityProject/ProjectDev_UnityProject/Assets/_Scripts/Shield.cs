@@ -22,10 +22,10 @@ public class Shield : Item
 
    void Update ( )
    {
-      //if ( Input.GetKeyDown(KeyCode.K))
-      //{
-      //   Use();
-      //}
+//      if ( Input.GetKeyDown(KeyCode.K))
+//      {
+//         Use();
+//      }
 
       timer += Time.deltaTime;
    }
