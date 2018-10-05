@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
    bool isVulnerable = true;
    float timer;
    public float invulnerableTime;
+   public bool canTakeDamage = true;
 
    public void Update()
    {
@@ -26,7 +27,8 @@ public class PlayerHealth : MonoBehaviour
 
    public void loseHealth(float damage = 1)
    {
-      health -= damage;
+      if (canTakeDamage)
+         health -= damage;
    }
 
    private void OnTriggerEnter2D(Collider2D other)
