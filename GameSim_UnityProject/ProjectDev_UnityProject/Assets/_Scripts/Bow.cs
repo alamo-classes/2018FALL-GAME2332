@@ -27,8 +27,8 @@ public class Bow : Item
    private void Update ( )
    {
       timer += Time.deltaTime;
-      if (Input.GetKeyDown(KeyCode.P))
-         Use();
+      //if (Input.GetKeyDown(KeyCode.P))
+      //   Use();
    }
 
    private void Shoot ( )
