@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+	public enum Direction {Up, Down, Right, Left};
+
    Rigidbody2D playerRigidbody;
    Animator playerAnimator;
    public float speed = 5f;
    public float dashSpeed = 10f;
    public float timeBetweenDashes = 1f;
+   public bool canMove = true;
+	public Direction dir;
    float timer;
    bool doubleDash = false;
+
 
    void Awake()
    {
@@ -26,8 +31,16 @@ public class PlayerController : MonoBehaviour
       //Debug.Log("Timer:" + timer);
       float horizontal = Input.GetAxisRaw("Horizontal");
       float vertical = Input.GetAxisRaw("Vertical");
-      Move(horizontal, vertical);
-      Dash(horizontal, vertical);
+      if ( canMove )
+      {
+         Move(horizontal, vertical);
+         Dash(horizontal, vertical);
+      }
+      else
+      {
+         playerAnimator.SetFloat("horizontal", 0f);
+         playerAnimator.SetFloat("vertical", 0f);
+      }
    }
 
    void Move(float h, float v)
@@ -35,6 +48,16 @@ public class PlayerController : MonoBehaviour
       playerAnimator.SetFloat("horizontal", h);
       playerAnimator.SetFloat("vertical", v);
 
+		if(v > 0)
+			dir = Direction.Up;
+		else if(v < 0)
+			dir = Direction.Down;
+
+		if(h > 0)
+			dir = Direction.Right;
+		else if(h < 0)
+			dir = Direction.Left;
+      
       Vector2 movement = new Vector2(h, v);
       playerRigidbody.AddForce(movement * speed);
    }
