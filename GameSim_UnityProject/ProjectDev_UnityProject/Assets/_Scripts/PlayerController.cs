@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
    public float timeBetweenDashes = 1f;
    float timer;
    bool doubleDash = false;
-   int dashCount;
 
    void Awake()
    {
@@ -44,10 +43,26 @@ public class PlayerController : MonoBehaviour
    {
       Vector2 movement = new Vector2(h, v);
 
-      if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
+      if (doubleDash)
       {
-         playerRigidbody.AddForce(movement * dashSpeed);
-         timer = 0f;
+         if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
+         {
+            playerRigidbody.AddForce(movement * dashSpeed);
+            timer = 0f;
+         }
+         if (Input.GetKeyDown(KeyCode.Space) && timer >= (timeBetweenDashes / 2))
+         {
+            playerRigidbody.AddForce(movement * dashSpeed);
+            timer = 0f;
+         }
+      }
+      else
+      {
+         if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
+         {
+            playerRigidbody.AddForce(movement * dashSpeed);
+            timer = 0f;
+         }
       }
    }
 
