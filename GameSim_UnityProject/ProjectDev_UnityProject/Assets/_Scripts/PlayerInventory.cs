@@ -45,6 +45,8 @@ public class PlayerInventory : MonoBehaviour
 		{
 			inventory[loadPos] = other.gameObject.GetComponent<Item>();
 			loadPos++;
+
+			inHand = inventory[handPos];
 		}
 	}
 }
