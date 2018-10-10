@@ -20,6 +20,7 @@ public class PlayerInventory : MonoBehaviour
 				handPos--;
 
 			inHand = inventory[handPos];
+			Debug.Log("Current Item: " + inHand.gameObject.name);
 		}
 
 		if(Input.GetKeyDown(KeyCode.E))
@@ -30,6 +31,7 @@ public class PlayerInventory : MonoBehaviour
 				handPos++;
 
 			inHand = inventory[handPos];
+			Debug.Log("Current Item: " + inHand.gameObject.name);
 		}
 	
 		//if 'K' -> use
@@ -47,6 +49,7 @@ public class PlayerInventory : MonoBehaviour
 			loadPos++;
 
 			inHand = inventory[handPos];
+			Debug.Log("Current Item: " + inHand.gameObject.name);
 		}
 	}
 }
