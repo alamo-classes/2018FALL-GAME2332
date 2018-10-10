@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	public enum Direction {Up, Down, Right, Left};
+   public enum Direction { Up, Down, Right, Left };
 
    Rigidbody2D playerRigidbody;
    Animator playerAnimator;
@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
    public float dashSpeed = 10f;
    public float timeBetweenDashes = 1f;
    public bool canMove = true;
-	public Direction dir;
+   public Direction dir;
    float timer;
+   bool doubleDash = false;
+   bool canDoubleDash = false;
 
 
    void Awake()
@@ -30,7 +32,7 @@ public class PlayerController : MonoBehaviour
       //Debug.Log("Timer:" + timer);
       float horizontal = Input.GetAxisRaw("Horizontal");
       float vertical = Input.GetAxisRaw("Vertical");
-      if ( canMove )
+      if (canMove)
       {
          Move(horizontal, vertical);
          Dash(horizontal, vertical);
@@ -47,16 +49,16 @@ public class PlayerController : MonoBehaviour
       playerAnimator.SetFloat("horizontal", h);
       playerAnimator.SetFloat("vertical", v);
 
-		if(v > 0)
-			dir = Direction.Up;
-		else if(v < 0)
-			dir = Direction.Down;
+      if (v > 0)
+         dir = Direction.Up;
+      else if (v < 0)
+         dir = Direction.Down;
 
-		if(h > 0)
-			dir = Direction.Right;
-		else if(h < 0)
-			dir = Direction.Left;
-      
+      if (h > 0)
+         dir = Direction.Right;
+      else if (h < 0)
+         dir = Direction.Left;
+
       Vector2 movement = new Vector2(h, v);
       playerRigidbody.AddForce(movement * speed);
    }
@@ -65,10 +67,39 @@ public class PlayerController : MonoBehaviour
    {
       Vector2 movement = new Vector2(h, v);
 
-      if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
+      if (doubleDash)
       {
-         playerRigidbody.AddForce(movement * dashSpeed);
-         timer = 0f;
+         if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
+         {
+            playerRigidbody.AddForce(movement * dashSpeed);
+            timer = 0f;
+            canDoubleDash = true;
+            Debug.Log("First dash...");
+         }
+         else if (Input.GetKeyDown(KeyCode.Space) && canDoubleDash)
+         {
+            playerRigidbody.AddForce(movement * dashSpeed);
+            canDoubleDash = false;
+            Debug.Log("Second dash...");
+         }
+      }
+      else
+      {
+         if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
+         {
+            playerRigidbody.AddForce(movement * dashSpeed);
+            timer = 0f;
+            Debug.Log("Single dash...");
+         }
+      }
+   }
+
+   void OnTriggerEnter2D(Collider2D other)
+   {
+      if (other.CompareTag("DoubleDash"))
+      {
+         doubleDash = true;
+         Destroy(other.gameObject);
       }
    }
 }
