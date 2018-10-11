@@ -10,6 +10,12 @@ public class PlayerHealth : MonoBehaviour
    float timer;
    public float invulnerableTime;
    public bool canTakeDamage = true;
+   PlayerController controls;
+
+   void Start()
+   {
+      controls = GetComponent<PlayerController>();
+   }
 
    public void Update()
    {
@@ -18,6 +24,9 @@ public class PlayerHealth : MonoBehaviour
          isVulnerable = true;
       else
          isVulnerable = false;
+
+      if (health <= 0)
+         Death();
    }
 
    public void addHealth(float heal = 1)
@@ -50,5 +59,8 @@ public class PlayerHealth : MonoBehaviour
       }
    }
 
-
+   void Death()
+   {
+      controls.canMove = false;
+   }
 }
