@@ -10,6 +10,15 @@ public class PlayerHealth : MonoBehaviour
    float timer;
    public float invulnerableTime;
    public bool canTakeDamage = true;
+   AudioSource deathSound;
+   public GameObject gameOverScreen;
+   PlayerController controls;
+
+   void Start()
+   {
+      deathSound = GetComponent<AudioSource>();
+      controls = GetComponent<PlayerController>();
+   }
 
    public void Update()
    {
@@ -29,6 +38,9 @@ public class PlayerHealth : MonoBehaviour
    {
       if (canTakeDamage)
          health -= damage;
+
+      if (health <= 0)
+         Death();
    }
 
    private void OnTriggerEnter2D(Collider2D other)
@@ -50,5 +62,10 @@ public class PlayerHealth : MonoBehaviour
       }
    }
 
-
+   void Death()
+   {
+      controls.canMove = false;
+      gameOverScreen.gameObject.SetActive(true);
+      deathSound.Play();
+   }
 }
