@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114998930606896000}
   m_Layer: 0
   m_Name: Teleport Item
-  m_TagString: Untagged
+  m_TagString: KeyItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40826efa835fe74ca1b4cf41bcadab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportDestination: {fileID: 0}
+  destination: {fileID: 0}
 --- !u!212 &212644050667437318
 SpriteRenderer:
   m_ObjectHideFlags: 1
