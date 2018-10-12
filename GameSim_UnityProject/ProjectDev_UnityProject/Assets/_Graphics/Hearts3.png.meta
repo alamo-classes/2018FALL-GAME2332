@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 83bc04ee0397f484ba6e02bfba0b0ee5
+guid: b3fb269bf471a6049b3311841e1171c4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: HP5
-    21300002: HP4
-    21300004: HP3
-    21300006: HP2
-    21300008: HP1
-    21300010: HP0
+    21300000: Hearts5
+    21300002: Hearts4
+    21300004: Hearts3
+    21300006: Hearts2
+    21300008: Hearts1
+    21300010: Hearts0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HP5
+      name: Hearts5
       rect:
         serializedVersion: 2
         x: 0
-        y: 239
-        width: 217
-        height: 37
+        y: 80
+        width: 80
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +104,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 917e681d5f177874aa662dd0fd9fb45a
+      spriteID: 234fda799bb55374c8cac6a83dacf037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP4
+      name: Hearts4
       rect:
         serializedVersion: 2
         x: 0
-        y: 196
-        width: 217
-        height: 37
+        y: 64
+        width: 80
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f31fc6ce875670f4ea50217a1f423300
+      spriteID: 68012b08fda2161468b4ee6d89085959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP3
+      name: Hearts3
       rect:
         serializedVersion: 2
         x: 0
-        y: 152
-        width: 217
-        height: 37
+        y: 48
+        width: 80
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 007ee8c1587972b46bd4f54aa59824c6
+      spriteID: c551298f8e55e38488f45c1eac56d6e3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP2
+      name: Hearts2
       rect:
         serializedVersion: 2
         x: 0
-        y: 115
-        width: 217
-        height: 37
+        y: 32
+        width: 80
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a032282f50597ba4f822f12c6129821a
+      spriteID: 6c6d9add62571b145ba71e2bdfbe052f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP1
+      name: Hearts1
       rect:
         serializedVersion: 2
         x: 0
-        y: 78
-        width: 217
-        height: 37
+        y: 16
+        width: 80
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a264872c25a7e664fb2def03b409ecdd
+      spriteID: 8f83fd70f86f02a4ab21513fdbb4226e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HP0
+      name: Hearts0
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 217
-        height: 37
+        y: 0
+        width: 80
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d807140f52d888642bfaba23cb3d7dcf
+      spriteID: c440b5cba1fd37841aa38be858b7a625
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a05a2336d9d295543bfd5ace71f870a1
+    spriteID: 924560b2c68e625448b72fd8449f27f8
     vertices: []
     indices: 
     edges: []
