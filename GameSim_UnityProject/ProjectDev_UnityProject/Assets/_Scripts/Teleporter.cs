@@ -5,6 +5,8 @@ using UnityEngine;
 public class Teleporter : Item
 {
    public GameObject destination;
+   public GameObject camera;
+   public GameObject cameraDestination;
    GameObject player;
 
    private void Awake()
@@ -17,5 +19,6 @@ public class Teleporter : Item
       //Play teleport animation
       //Should it be interruptible?
       player.transform.position = destination.transform.position;
+      camera.transform.position = cameraDestination.transform.position;
    }
 }

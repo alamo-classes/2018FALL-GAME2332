@@ -3458,6 +3458,16 @@ Prefab:
       propertyPath: destination
       value: 
       objectReference: {fileID: 1830222657}
+    - target: {fileID: 114998930606896000, guid: 25b9ebe5e6b1ca540a933c79fa673987,
+        type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 114998930606896000, guid: 25b9ebe5e6b1ca540a933c79fa673987,
+        type: 2}
+      propertyPath: cameraDestination
+      value: 
+      objectReference: {fileID: 836180461}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9ebe5e6b1ca540a933c79fa673987, type: 2}
   m_IsPrefabAsset: 0
@@ -4169,7 +4179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1830222657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.94, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
