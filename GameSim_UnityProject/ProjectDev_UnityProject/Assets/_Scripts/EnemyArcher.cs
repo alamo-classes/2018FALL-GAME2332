@@ -21,7 +21,7 @@ public class EnemyArcher : MonoBehaviour
    }
 
    // Update is called once per frame
-   void Update ( )
+   void FixedUpdate ( )
    {
       float detectDistance = (player.transform.position - transform.position).sqrMagnitude;
 
@@ -46,7 +46,7 @@ public class EnemyArcher : MonoBehaviour
 
       if ( moveCloser)
       {
-         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+         m_rigidBody.MovePosition( Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime));
       }
       else if ( inRange )
       {
@@ -70,15 +70,15 @@ public class EnemyArcher : MonoBehaviour
 
       if ( xDist < yDist)
       {
-         transform.position = Vector2.MoveTowards( transform.position, 
+         m_rigidBody.MovePosition( Vector2.MoveTowards( transform.position, 
                                                    new Vector2(player.transform.position.x, transform.position.y), 
-                                                   speed * Time.deltaTime);
+                                                   speed * Time.deltaTime));
       }
       else
       {
-         transform.position = Vector2.MoveTowards(transform.position,
+         m_rigidBody.MovePosition( Vector2.MoveTowards(transform.position,
                                           new Vector2(transform.position.x, player.transform.position.y),
-                                          speed * Time.deltaTime);
+                                          speed * Time.deltaTime) );
       }
 
 
