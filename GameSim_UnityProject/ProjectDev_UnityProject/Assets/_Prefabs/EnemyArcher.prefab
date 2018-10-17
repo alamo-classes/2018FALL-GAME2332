@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 61595562888777902}
   - component: {fileID: 114813786254218596}
   - component: {fileID: 114283730828362058}
+  - component: {fileID: 114241738508158246}
+  - component: {fileID: 114537634140787130}
   - component: {fileID: 50262117199448708}
   m_Layer: 0
   m_Name: EnemyArcher
@@ -89,6 +91,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &114241738508158246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1789411458710552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2bdef641169724b8846c093bf9ba83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 1382790132733372, guid: e67ec08c17b42e046ada1ea94e6cb2c8, type: 2}
+  fireRate: 1
 --- !u!114 &114283730828362058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,6 +118,17 @@ MonoBehaviour:
   speed: 1
   detectRange: 40
   attackRange: 25
+--- !u!114 &114537634140787130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1789411458710552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2d71b4bcc52c94eaec2beb0788b3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114813786254218596
 MonoBehaviour:
   m_ObjectHideFlags: 1

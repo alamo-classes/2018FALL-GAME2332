@@ -7,12 +7,15 @@ public class Bow : Item
    public GameObject arrow;
    public float fireRate = 1f;
 
-   private PlayerController player;
+   private Direction player;
    private float timer = 0f;
+
+   BoxCollider2D boxCollider;
 
    private void Awake ( )
    {
-      player = GetComponent<PlayerController>();
+      boxCollider = GetComponent<BoxCollider2D>();
+      player = GetComponent<Direction>();
    }
 
    public override void Use ( )
@@ -34,25 +37,28 @@ public class Bow : Item
    private void Shoot ( )
    {
       Vector3 dir = new Vector3();
-
-
-      switch ( player.dir )
+      Vector3 offset = new Vector3();
+      switch ( player.GetFacing() )
       {
-         case PlayerController.Direction.Up :
+         case Direction.Facing.Up :
             dir.z = 90f;
+            offset.y = boxCollider.size.y * 3.5f;
             break;
-         case PlayerController.Direction.Left :
+         case Direction.Facing.Left:
             dir.z = 180f;
+            offset.x = -boxCollider.size.x * 3.5f;
             break;
-         case PlayerController.Direction.Down :
+         case Direction.Facing.Down:
             dir.z = -90f;
+            offset.y = -boxCollider.size.y * 3.5f;
             break;
-         case PlayerController.Direction.Right :
+         case Direction.Facing.Right:
             dir.z = 0f;
+            offset.x = boxCollider.size.x * 3.5f;
             break;
       }
 
-      GameObject bolt = Instantiate(arrow, this.transform.position, Quaternion.identity) as GameObject;
+      GameObject bolt = Instantiate(arrow, this.transform.position + offset, Quaternion.identity) as GameObject;
       bolt.transform.rotation = Quaternion.Euler(dir);
    }
 }

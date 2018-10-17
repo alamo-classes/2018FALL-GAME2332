@@ -11,11 +11,11 @@ public class Sword : MonoBehaviour {
 
 	private float timerCount = 0;
 	private BoxCollider2D active;
-	private PlayerController player;
+	private Direction player;
 
 	void Start()
 	{
-		player = GetComponentInParent<PlayerController>();
+		player = GetComponentInParent<Direction>();
 		active = GetComponent<BoxCollider2D>();
 		isActive = false;
 	}
@@ -31,21 +31,21 @@ public class Sword : MonoBehaviour {
 		//Left -	(-.25, 0) / (.2, .5)
 
 		//If/Else
-		switch(player.dir)
+		switch(player.GetFacing())
 		{
-		case PlayerController.Direction.Up:
+		case Direction.Facing.Up:
 			active.offset = new Vector2(0,.2f);
 			active.size = new Vector2(.5f, .2f);
 			break;
-		case PlayerController.Direction.Down:
+		case Direction.Facing.Down:
 			active.offset = new Vector2(0,-.29f);
 			active.size = new Vector2(.5f, .2f);
 			break;
-		case PlayerController.Direction.Right:
+		case Direction.Facing.Right:
 			active.offset = new Vector2(.25f,0);
 			active.size = new Vector2(.2f, .5f);
 			break;
-		case PlayerController.Direction.Left:
+		case Direction.Facing.Left:
 			active.offset = new Vector2(-.25f,0);
 			active.size = new Vector2(.2f, .5f);
 			break;

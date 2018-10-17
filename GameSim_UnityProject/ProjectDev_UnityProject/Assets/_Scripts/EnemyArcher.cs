@@ -12,22 +12,28 @@ public class EnemyArcher : MonoBehaviour
    bool inRange;
    Transform player;
    Rigidbody2D m_rigidBody;
+   Direction direction;
+   Item item;
 
    // Use this for initialization
    void Awake ( )
    {
+      direction = GetComponent<Direction>();
       player = GameObject.FindGameObjectWithTag("Player").transform;
       m_rigidBody = GetComponent<Rigidbody2D>();
+      item = GetComponent<Item>();
    }
 
    // Update is called once per frame
    void FixedUpdate ( )
    {
+
       float detectDistance = (player.transform.position - transform.position).sqrMagnitude;
 
       if (detectDistance <= detectRange)
       {
          moveCloser = true;
+         SetDiretion();
       }
       else
       {
@@ -81,6 +87,23 @@ public class EnemyArcher : MonoBehaviour
                                           speed * Time.deltaTime) );
       }
 
+      item.Use();
+   }
+
+   private void SetDiretion ( )
+   {
+      if (player.position.y > transform.position.y)
+         direction.SetFacing(Direction.Facing.Up);
+      else
+         direction.SetFacing(Direction.Facing.Down);
+
+      if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
+      {
+         if (player.position.x > transform.position.x)
+            direction.SetFacing(Direction.Facing.Right);
+         else
+            direction.SetFacing(Direction.Facing.Left);
+      }
 
    }
 
