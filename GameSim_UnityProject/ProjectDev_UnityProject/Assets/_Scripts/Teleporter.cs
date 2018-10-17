@@ -5,7 +5,7 @@ using UnityEngine;
 public class Teleporter : Item
 {
    public GameObject destination;
-   public GameObject camera;
+   public new GameObject camera;
    public GameObject cameraDestination;
    GameObject player;
 
