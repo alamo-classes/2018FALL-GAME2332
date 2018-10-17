@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamerChangeTrigger : MonoBehaviour
+public class CameraChangeTrigger : MonoBehaviour
 {
 
     public GameObject cameraPosition;

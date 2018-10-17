@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
    float timer;
    public float invulnerableTime;
    public bool canTakeDamage = true;
+   bool damaged = false;
    AudioSource deathSound;
    public GameObject gameOverScreen;
    PlayerController controls;
@@ -27,14 +28,16 @@ public class PlayerHealth : MonoBehaviour
          isVulnerable = true;
       else
          isVulnerable = false;
+
+      damaged = false;
    }
 
-   public void addHealth(float heal = 1)
+   public void AddHealth(float heal = 1)
    {
       health += heal;
    }
 
-   public void loseHealth(float damage = 1)
+   public void LoseHealth(float damage = 1)
    {
       if (canTakeDamage)
          health -= damage;
@@ -51,13 +54,14 @@ public class PlayerHealth : MonoBehaviour
 
       if (healingOrb)
       {
-         addHealth(healingOrb.HealingPoints());
+         AddHealth(healingOrb.HealingPoints());
          Destroy(other.gameObject);
       }
 
       if (attack && isVulnerable)
       {
-         loseHealth(attack.attackDamage);
+         LoseHealth(attack.attackDamage);
+         damaged = true;
          timer = 0f;
       }
    }
