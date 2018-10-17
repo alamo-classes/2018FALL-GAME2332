@@ -14,10 +14,13 @@ public class PlayerInventory : MonoBehaviour
 		//Q & E Switch
 		if(Input.GetKeyDown(KeyCode.Q))
 		{
-			if(handPos == 0)
-				handPos = inventory.Length - 1;
-			else
-				handPos--;
+			int newPos = handPos;
+			newPos--;
+
+			if(newPos < 0 || inventory[newPos] == null )
+				newPos = loadPos - 1;
+
+			handPos = newPos;
 
 			inHand = inventory[handPos];
 			Debug.Log("Current Item: " + inHand.gameObject.name);
@@ -25,17 +28,22 @@ public class PlayerInventory : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.E))
 		{
-			if(handPos == inventory.Length - 1)
-				handPos = 0;
-			else 
-				handPos++;
+			int newPos = handPos;
+			newPos++;
+
+			if(newPos > inventory.Length - 1 || inventory[newPos] == null )
+				newPos = 0;
+
+			handPos = newPos;
 
 			inHand = inventory[handPos];
 			Debug.Log("Current Item: " + inHand.gameObject.name);
 		}
+
+		Debug.Log("HandPos: " + handPos);
 	
 		//if 'K' -> use
-		if(Input.GetKeyDown(KeyCode.K))
+		if(Input.GetKeyDown(KeyCode.K) && inHand != null)
 		{
 			inHand.Use();
 		}
@@ -43,7 +51,7 @@ public class PlayerInventory : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "KeyItem")
+		if(other.tag == "KeyItem" && loadPos < inventory.Length)
 		{
 			inventory[loadPos] = other.gameObject.GetComponent<Item>();
 			loadPos++;
