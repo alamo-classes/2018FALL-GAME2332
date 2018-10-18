@@ -41,7 +41,7 @@ public class Arrow : MonoBehaviour
 
       if ( other.tag == "Player")
       {
-         other.gameObject.GetComponent<PlayerHealth>().loseHealth(damage);
+         other.gameObject.GetComponent<PlayerHealth>().LoseHealth(damage);
          Debug.Log("Hit Player");
          SelfDestruct();
       }
