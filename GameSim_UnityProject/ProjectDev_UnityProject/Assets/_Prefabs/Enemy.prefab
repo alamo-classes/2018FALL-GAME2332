@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114075375109976398}
   - component: {fileID: 61976837990905214}
   - component: {fileID: 114663997484176164}
+  - component: {fileID: 114491047212362364}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -109,6 +110,17 @@ MonoBehaviour:
   speed: 1
   detectRange: 10
   route: []
+--- !u!114 &114491047212362364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365795171898284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2d71b4bcc52c94eaec2beb0788b3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114663997484176164
 MonoBehaviour:
   m_ObjectHideFlags: 1
