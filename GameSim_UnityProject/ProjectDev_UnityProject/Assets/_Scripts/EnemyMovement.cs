@@ -7,6 +7,8 @@ public class EnemyMovement : MonoBehaviour
    public float speed = 1f;
    public float detectRange = 10f;
    bool inRange;
+   bool playerInStealth;
+   float stealthMultiplier;
    Transform player;
    public Transform[] route;
    private int currentRouteDest;
@@ -21,6 +23,14 @@ public class EnemyMovement : MonoBehaviour
    void Update()
    {
       float detectDistance = (player.position - transform.position).sqrMagnitude;
+
+      playerInStealth = Stealth.inStealth;
+      stealthMultiplier = Stealth.stealthMultiplier;
+
+      if (playerInStealth)
+         detectRange /= stealthMultiplier;
+      else if (!playerInStealth)
+         detectRange *= stealthMultiplier;
 
       if (detectDistance <= detectRange)
          inRange = true;
