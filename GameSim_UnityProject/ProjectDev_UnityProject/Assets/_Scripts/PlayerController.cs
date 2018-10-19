@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-   public enum Direction { Up, Down, Right, Left };
+   Direction direction;
 
    Rigidbody2D playerRigidbody;
    Animator playerAnimator;
@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
    public float dashSpeed = 10f;
    public float timeBetweenDashes = 1f;
    public bool canMove = true;
-   public Direction dir;
    float timer;
    bool doubleDash = false;
    bool canDoubleDash = false;
@@ -20,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
    void Awake()
    {
+      direction = GetComponent<Direction>();
       playerRigidbody = GetComponent<Rigidbody2D>();
       playerAnimator = GetComponent<Animator>();
       timer = timeBetweenDashes;
@@ -50,14 +50,13 @@ public class PlayerController : MonoBehaviour
       playerAnimator.SetFloat("vertical", v);
 
       if (v > 0)
-         dir = Direction.Up;
+         direction.SetFacing( Direction.Facing.Up);
       else if (v < 0)
-         dir = Direction.Down;
-
+         direction.SetFacing(Direction.Facing.Down);
       if (h > 0)
-         dir = Direction.Right;
+         direction.SetFacing(Direction.Facing.Right);
       else if (h < 0)
-         dir = Direction.Left;
+         direction.SetFacing(Direction.Facing.Left);
 
       Vector2 movement = new Vector2(h, v);
       playerRigidbody.AddForce(movement * speed);
