@@ -18,6 +18,7 @@ public class RevealAreas : MonoBehaviour
       if ( other.tag == "Player")
       {
          registry.HideAllFakeObjects();
+         Destroy(gameObject);
       }
    }
 }
