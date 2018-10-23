@@ -16,6 +16,8 @@ public class Stealth : Item
          Debug.Log("Enemy detection range: " + EnemyMovement.detectRange);
          EnemyArcher.detectRange /= stealthMultiplier;
          Debug.Log("Archer detection range: " + EnemyArcher.detectRange);
+         EnemyArcher.attackRange /= stealthMultiplier;
+         Debug.Log("Archer attack range: " + EnemyArcher.attackRange);
       }
       else if (inStealth)
       {
@@ -24,6 +26,8 @@ public class Stealth : Item
          Debug.Log("Enemy detection range: " + EnemyMovement.detectRange);
          EnemyArcher.detectRange *= stealthMultiplier;
          Debug.Log("Archer detection range: " + EnemyArcher.detectRange);
+         EnemyArcher.attackRange *= stealthMultiplier;
+         Debug.Log("Archer attack range: " + EnemyArcher.attackRange);
       }
    }
 }
