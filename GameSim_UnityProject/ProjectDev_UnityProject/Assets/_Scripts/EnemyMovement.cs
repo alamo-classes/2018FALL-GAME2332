@@ -5,8 +5,10 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
    public float speed = 1f;
-   public float detectRange = 10f;
+   public static float detectRange = 10f;
    bool inRange;
+   bool playerInStealth;
+   float stealthMultiplier;
    Transform player;
    public Transform[] route;
    private int currentRouteDest;
