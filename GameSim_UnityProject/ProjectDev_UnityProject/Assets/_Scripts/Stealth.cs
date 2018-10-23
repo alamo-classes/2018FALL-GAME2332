@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class Stealth : Item
 {
-   public static bool inStealth = false;
-   public static float stealthMultiplier = 2f;
+   bool inStealth = false;
+   public float stealthMultiplier = 2f;
 
    public override void Use()
    {
       if (!inStealth)
+      {
          inStealth = true;
+         EnemyMovement.detectRange /= stealthMultiplier;
+         Debug.Log("Enemy detection range: " + EnemyMovement.detectRange);
+         EnemyArcher.detectRange /= stealthMultiplier;
+         Debug.Log("Archer detection range: " + EnemyArcher.detectRange);
+      }
       else if (inStealth)
+      {
          inStealth = false;
+         EnemyMovement.detectRange *= stealthMultiplier;
+         Debug.Log("Enemy detection range: " + EnemyMovement.detectRange);
+         EnemyArcher.detectRange *= stealthMultiplier;
+         Debug.Log("Archer detection range: " + EnemyArcher.detectRange);
+      }
    }
 }
