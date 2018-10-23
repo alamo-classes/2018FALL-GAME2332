@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class EnemyArcher : MonoBehaviour
 {
-
    public float speed = 1f;
-   public float detectRange = 30f;
-   public float attackRange = 10f;
+   public static float detectRange = 50f;
+   public static float attackRange = 30f;
    bool moveCloser;
    bool inRange;
    Transform player;
