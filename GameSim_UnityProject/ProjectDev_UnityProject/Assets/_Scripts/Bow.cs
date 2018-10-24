@@ -15,7 +15,7 @@ public class Bow : Item
    private void Awake ( )
    {
       boxCollider = GetComponent<BoxCollider2D>();
-      player = GameObject.FindGameObjectWithTag("Player").GetComponent<Direction>();
+      player = GetComponent<Direction>();
    }
 
    public override void Use ( )
@@ -60,5 +60,13 @@ public class Bow : Item
 
       GameObject bolt = Instantiate(arrow, player.transform.position + offset, Quaternion.identity) as GameObject;
       bolt.transform.rotation = Quaternion.Euler(dir);
+   }
+
+   private void OnTriggerEnter2D ( Collider2D collision )
+   {
+      if ( player == null)
+      {
+         player = collision.GetComponent<Direction>();
+      }
    }
 }
