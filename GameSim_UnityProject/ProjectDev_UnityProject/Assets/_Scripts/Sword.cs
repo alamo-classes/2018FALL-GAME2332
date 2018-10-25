@@ -8,6 +8,7 @@ public class Sword : MonoBehaviour {
 	public float damage = 1;
 
 	bool isActive;
+   bool isPlayerHolding;
 
 	private float timerCount = 0;
 	private BoxCollider2D active;
@@ -18,6 +19,14 @@ public class Sword : MonoBehaviour {
 		player = GetComponentInParent<Direction>();
 		active = GetComponent<BoxCollider2D>();
 		isActive = false;
+
+      PlayerController test = GetComponentInParent<PlayerController>();
+      if (test)
+      {
+         isPlayerHolding = true;
+      }
+      else
+         isPlayerHolding = false;
 	}
 
 	void Update ()
@@ -53,7 +62,7 @@ public class Sword : MonoBehaviour {
 			break;
 		}
 			
-		if(Input.GetKeyDown(KeyCode.J) && !isActive)
+		if(Input.GetKeyDown(KeyCode.J) && !isActive && isPlayerHolding)
 		{
 			active.enabled = true;
 			isActive = true;
@@ -69,12 +78,23 @@ public class Sword : MonoBehaviour {
 			
 	}
 
+   public void Attack ( )
+   {
+      active.enabled = true;
+      isActive = true;
+   }
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.tag == "Enemy")
+		if(other.tag == "Enemy" && isPlayerHolding)
 		{
 			other.gameObject.GetComponent<EnemyHealth>().RemoveHealth(damage);
 			//current problem: enemy can be hit twice in one swing
 		}
+      if ( other.tag == "Player" && !isPlayerHolding)
+      {
+         other.gameObject.GetComponent<PlayerHealth>().LoseHealth(damage);
+      }
+      
 	}
 }
