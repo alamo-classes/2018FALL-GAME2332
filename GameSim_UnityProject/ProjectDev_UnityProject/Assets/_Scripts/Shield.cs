@@ -15,8 +15,8 @@ public class Shield : Item
    // Use this for initialization
    void Awake ( )
    {
-      playerController = GetComponent<PlayerController>();
-      playerHealth = GetComponent<PlayerHealth>();
+      playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+      playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
 
    }
 
@@ -42,6 +42,7 @@ public class Shield : Item
 
    private void Activate ( )
    {
+      Debug.Log("Shield activated");
       playerHealth.canTakeDamage = false;
       playerController.canMove = false;
       Invoke("Deactivate", activeTime);
@@ -49,6 +50,7 @@ public class Shield : Item
 
    private void Deactivate ( )
    {
+      Debug.Log("Shield deactivated");
       playerHealth.canTakeDamage = true;
       playerController.canMove = true;
    }

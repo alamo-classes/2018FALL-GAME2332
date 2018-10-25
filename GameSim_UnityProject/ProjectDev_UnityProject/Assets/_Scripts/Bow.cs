@@ -58,7 +58,15 @@ public class Bow : Item
             break;
       }
 
-      GameObject bolt = Instantiate(arrow, this.transform.position + offset, Quaternion.identity) as GameObject;
+      GameObject bolt = Instantiate(arrow, player.transform.position + offset, Quaternion.identity) as GameObject;
       bolt.transform.rotation = Quaternion.Euler(dir);
+   }
+
+   private void OnTriggerEnter2D ( Collider2D collision )
+   {
+      if ( player == null)
+      {
+         player = collision.GetComponent<Direction>();
+      }
    }
 }
