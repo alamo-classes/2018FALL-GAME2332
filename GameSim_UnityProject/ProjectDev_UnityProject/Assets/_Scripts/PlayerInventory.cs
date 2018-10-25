@@ -2,62 +2,66 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInventory : MonoBehaviour 
+public class PlayerInventory : MonoBehaviour
 {
-	Item[] inventory = new Item[9];
-	int loadPos = 0;
-	int handPos = 0;
-	Item inHand = null;
-		
-	void Update()
-	{
-		//Q & E Switch
-		if(Input.GetKeyDown(KeyCode.Q))
-		{
-			int newPos = handPos;
-			newPos--;
+   Item[] inventory = new Item[9];
+   int loadPos = 0;
+   int handPos = 0;
+   Item inHand = null;
+   ProgressManager progressManager;
 
-			if(newPos < 0 || inventory[newPos] == null )
-				newPos = loadPos - 1;
+   void Update()
+   {
+      //Q & E Switch
+      if (Input.GetKeyDown(KeyCode.Q))
+      {
+         int newPos = handPos;
+         newPos--;
 
-			handPos = newPos;
+         if (newPos < 0 || inventory[newPos] == null)
+            newPos = loadPos - 1;
 
-			inHand = inventory[handPos];
-			Debug.Log("Current Item: " + inHand.gameObject.name);
-		}
+         handPos = newPos;
 
-		if(Input.GetKeyDown(KeyCode.E))
-		{
-			int newPos = handPos;
-			newPos++;
+         inHand = inventory[handPos];
+         Debug.Log("Current Item: " + inHand.gameObject.name);
+      }
 
-			if(newPos > inventory.Length - 1 || inventory[newPos] == null )
-				newPos = 0;
+      if (Input.GetKeyDown(KeyCode.E))
+      {
+         int newPos = handPos;
+         newPos++;
 
-			handPos = newPos;
+         if (newPos > inventory.Length - 1 || inventory[newPos] == null)
+            newPos = 0;
 
-			inHand = inventory[handPos];
-			Debug.Log("Current Item: " + inHand.gameObject.name);
-		}
+         handPos = newPos;
 
-		Debug.Log("HandPos: " + handPos);
-	
-		//if 'K' -> use
-		if(Input.GetKeyDown(KeyCode.K) && inHand != null)
-		{
-			inHand.Use();
-		}
-	}
+         inHand = inventory[handPos];
+         Debug.Log("Current Item: " + inHand.gameObject.name);
+      }
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		if(other.tag == "KeyItem" && loadPos < inventory.Length)
-		{
-			inventory[loadPos] = other.gameObject.GetComponent<Item>();
-			loadPos++;
+      Debug.Log("HandPos: " + handPos);
 
-			inHand = inventory[handPos];
-			Debug.Log("Current Item: " + inHand.gameObject.name);
-		}
-	}
+      //if 'K' -> use
+      if (Input.GetKeyDown(KeyCode.K) && inHand != null)
+      {
+         inHand.Use();
+      }
+   }
+
+   void OnTriggerEnter2D(Collider2D other)
+   {
+      if (other.tag == "KeyItem" && loadPos < inventory.Length)
+      {
+         inventory[loadPos] = other.gameObject.GetComponent<Item>();
+         loadPos++;
+
+         ProgressManager.keyItemCounter++;
+         inventory[loadPos].transform.position = progressManager.itemBuffer[ProgressManager.keyItemCounter].transform.position;
+
+         inHand = inventory[handPos];
+         Debug.Log("Current Item: " + inHand.gameObject.name);
+      }
+   }
 }
