@@ -54,7 +54,7 @@ public class FinalBoss : MonoBehaviour
       if (detectDistance <= detectRange)
       {
          moveCloser = true;
-         SetDiretion();
+         SetDirection();
       }
       else
       {
@@ -113,7 +113,7 @@ public class FinalBoss : MonoBehaviour
       bow.Use();
    }
 
-   private void SetDiretion ( )
+   private void SetDirection ( )
    {
       if (player.position.y > transform.position.y)
          direction.SetFacing(Direction.Facing.Up);
