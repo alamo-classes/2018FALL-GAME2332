@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114603260467239322}
   m_Layer: 0
   m_Name: Stealth Item
-  m_TagString: Untagged
+  m_TagString: KeyItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,9 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81889db4b7b3ef5409024d8a91e1cc0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1365795171898284, guid: 431854977eab01b4cb0957719fd0fdad, type: 2}
-  enemyArcher: {fileID: 1789411458710552, guid: bef0f2e55f2fa324581cfb4ea37082ea,
-    type: 2}
+  stealthMultiplier: 2
 --- !u!212 &212847705514989304
 SpriteRenderer:
   m_ObjectHideFlags: 1
