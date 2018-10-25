@@ -100,7 +100,6 @@ public class PlayerController : MonoBehaviour
       {
          doubleDash = true;
          Destroy(other.gameObject);
-         ProgressManager.keyItemCounter++;
          ProgressManager.hasDoubleDash = true;
       }
    }

@@ -19,7 +19,6 @@ public class RevealAreas : MonoBehaviour
       {
          registry.HideAllFakeObjects();
          Destroy(gameObject);
-         ProgressManager.keyItemCounter++;
          ProgressManager.hasRevealHiddenObjects = true;
       }
    }

@@ -31,7 +31,7 @@ public class FinalBoss : MonoBehaviour
    void FixedUpdate ( )
    {
       float detectDistance = (player.transform.position - transform.position).sqrMagnitude;
-      DeterminAction(detectDistance);
+      DetermineAction(detectDistance);
 
       if (moveCloser)
       {
@@ -49,7 +49,7 @@ public class FinalBoss : MonoBehaviour
       }
    }
 
-   public void DeterminAction (float detectDistance )
+   public void DetermineAction (float detectDistance )
    {
       if (detectDistance <= detectRange)
       {
@@ -128,5 +128,10 @@ public class FinalBoss : MonoBehaviour
             direction.SetFacing(Direction.Facing.Left);
       }
 
+   }
+
+   private void OnDestroy()
+   {
+      ProgressManager.bossIsDead = true;
    }
 }
