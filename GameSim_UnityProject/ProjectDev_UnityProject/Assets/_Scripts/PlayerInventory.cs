@@ -57,6 +57,8 @@ public class PlayerInventory : MonoBehaviour
 			loadPos++;
 
 			inHand = inventory[handPos];
+
+         other.gameObject.transform.position = new Vector3(-50, -50 * (loadPos + 1), 0);
 			Debug.Log("Current Item: " + inHand.gameObject.name);
 		}
 	}

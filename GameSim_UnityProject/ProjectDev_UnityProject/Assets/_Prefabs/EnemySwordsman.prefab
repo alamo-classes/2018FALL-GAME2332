@@ -9,40 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1153200884490760}
+  m_RootGameObject: {fileID: 1058180789373466}
   m_IsPrefabAsset: 1
---- !u!1 &1153200884490760
+--- !u!1 &1040335965371332
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4904365959399656}
-  - component: {fileID: 212333912963067038}
-  - component: {fileID: 50937273455313018}
-  - component: {fileID: 61476685967638686}
-  - component: {fileID: 114040248627745212}
-  - component: {fileID: 114900150443995754}
-  - component: {fileID: 114268439953372860}
-  - component: {fileID: 114027522316834098}
-  m_Layer: 0
-  m_Name: Captain Skott
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1473582977027490
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4246127002036416}
-  - component: {fileID: 61998830555376170}
-  - component: {fileID: 114062056991257316}
+  - component: {fileID: 4301936958120678}
+  - component: {fileID: 61927613208140504}
+  - component: {fileID: 114920600376045646}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -50,40 +28,61 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4246127002036416
+--- !u!1 &1058180789373466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4382899510264622}
+  - component: {fileID: 212174124117761730}
+  - component: {fileID: 61572105814811204}
+  - component: {fileID: 114729541635277394}
+  - component: {fileID: 114183239055273256}
+  - component: {fileID: 114374343349408654}
+  - component: {fileID: 50099304553140240}
+  m_Layer: 0
+  m_Name: EnemySwordsman
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4301936958120678
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1473582977027490}
+  m_GameObject: {fileID: 1040335965371332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4904365959399656}
+  m_Father: {fileID: 4382899510264622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4904365959399656
+--- !u!4 &4382899510264622
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.38, y: -0.24, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_GameObject: {fileID: 1058180789373466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
-  - {fileID: 4246127002036416}
+  - {fileID: 4301936958120678}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50937273455313018
+--- !u!50 &50099304553140240
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
+  m_GameObject: {fileID: 1058180789373466}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -97,12 +96,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61476685967638686
+--- !u!61 &61572105814811204
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
+  m_GameObject: {fileID: 1058180789373466}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -122,12 +121,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
---- !u!61 &61998830555376170
+--- !u!61 &61927613208140504
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1473582977027490}
+  m_GameObject: {fileID: 1040335965371332}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -147,77 +146,62 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &114027522316834098
+--- !u!114 &114183239055273256
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
+  m_GameObject: {fileID: 1058180789373466}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2d71b4bcc52c94eaec2beb0788b3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114040248627745212
+--- !u!114 &114374343349408654
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
+  m_GameObject: {fileID: 1058180789373466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2bdef641169724b8846c093bf9ba83, type: 3}
+  m_Script: {fileID: 11500000, guid: 37ffe663d0680214e8074594eb307abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 1382790132733372, guid: e67ec08c17b42e046ada1ea94e6cb2c8, type: 2}
-  fireRate: 1
---- !u!114 &114062056991257316
+  speed: 1.25
+  detectRange: 30
+  swordAttackRange: 15
+--- !u!114 &114729541635277394
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1473582977027490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dcef8fdf1b09314daac2c94dc31d013, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 1
-  damage: 1
-  isPlayerHolding: 0
---- !u!114 &114268439953372860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5f9268c14e5a3498f0d752333be0d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  detectRange: 50
-  attackRange: 30
-  swordAttackRange: 10
---- !u!114 &114900150443995754
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
+  m_GameObject: {fileID: 1058180789373466}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 442d38da699057441870cdc825ee70e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
---- !u!212 &212333912963067038
+  health: 2
+--- !u!114 &114920600376045646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040335965371332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dcef8fdf1b09314daac2c94dc31d013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 4
+  damage: 1
+--- !u!212 &212174124117761730
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153200884490760}
+  m_GameObject: {fileID: 1058180789373466}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -248,7 +232,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.33962262, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.025779724, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

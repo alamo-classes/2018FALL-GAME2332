@@ -58,12 +58,12 @@ public class PlayerHealth : MonoBehaviour
          Destroy(other.gameObject);
       }
 
-      if (attack && isVulnerable)
-      {
-         LoseHealth(attack.attackDamage);
-         damaged = true;
-         timer = 0f;
-      }
+      //if (attack && isVulnerable)
+      //{
+      //   LoseHealth(attack.attackDamage);
+      //   damaged = true;
+      //   timer = 0f;
+      //}
    }
 
    void Death()
