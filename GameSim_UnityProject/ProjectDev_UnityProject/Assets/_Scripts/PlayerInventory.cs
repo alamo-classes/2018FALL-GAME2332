@@ -58,7 +58,7 @@ public class PlayerInventory : MonoBehaviour
          loadPos++;
 
          ProgressManager.keyItemCounter++;
-         inventory[loadPos].transform.position = progressManager.itemBuffer[ProgressManager.keyItemCounter].transform.position;
+         inventory[loadPos].gameObject.transform.position = progressManager.itemBuffer[ProgressManager.keyItemCounter].gameObject.transform.position;
 
          inHand = inventory[handPos];
          Debug.Log("Current Item: " + inHand.gameObject.name);

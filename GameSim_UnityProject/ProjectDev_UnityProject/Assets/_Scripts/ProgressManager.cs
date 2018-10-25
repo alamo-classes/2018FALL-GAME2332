@@ -5,8 +5,8 @@ using UnityEngine;
 public class ProgressManager : MonoBehaviour
 {
    public static int keyItemCounter = -1;
-   static bool hasDoubleDash = false;
-   static bool hasRevealHiddenObjects = false;
+   public static bool hasDoubleDash = false;
+   public static bool hasRevealHiddenObjects = false;
    public Transform[] itemBuffer;
 
    void Update()
