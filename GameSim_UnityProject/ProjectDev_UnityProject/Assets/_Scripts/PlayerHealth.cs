@@ -34,7 +34,8 @@ public class PlayerHealth : MonoBehaviour
 
    public void AddHealth(float heal = 1)
    {
-      health += heal;
+      if ( health > 5)
+         health += heal;
    }
 
    public void LoseHealth(float damage = 1)
