@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114027522316834098}
   m_Layer: 0
   m_Name: Captain Skott
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ Transform:
   m_GameObject: {fileID: 1153200884490760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25.38, y: -0.24, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4246127002036416}
   m_Father: {fileID: 0}
@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 1
   damage: 1
+  isPlayerHolding: 0
 --- !u!114 &114268439953372860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,10 +197,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  detectRange: 75
-  attackRange: 45
+  detectRange: 50
+  attackRange: 30
   swordAttackRange: 10
-  swordAttackSpeed: 1
 --- !u!114 &114900150443995754
 MonoBehaviour:
   m_ObjectHideFlags: 1

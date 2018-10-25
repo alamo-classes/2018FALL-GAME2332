@@ -89,11 +89,14 @@ public class Sword : MonoBehaviour {
 		if(other.tag == "Enemy" && isPlayerHolding)
 		{
 			other.gameObject.GetComponent<EnemyHealth>().RemoveHealth(damage);
+         Debug.Log("Hit Enemy");
 			//current problem: enemy can be hit twice in one swing
 		}
       if ( other.tag == "Player" && !isPlayerHolding)
       {
          other.gameObject.GetComponent<PlayerHealth>().LoseHealth(damage);
+
+         Debug.Log("Hit Player");
       }
       
 	}
