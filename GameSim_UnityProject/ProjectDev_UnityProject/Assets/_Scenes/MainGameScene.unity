@@ -2216,6 +2216,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 114998930606896000, guid: 25b9ebe5e6b1ca540a933c79fa673987,
+        type: 2}
+      propertyPath: destination
+      value: 
+      objectReference: {fileID: 2078287076}
+    - target: {fileID: 114998930606896000, guid: 25b9ebe5e6b1ca540a933c79fa673987,
+        type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420028}
+    - target: {fileID: 114998930606896000, guid: 25b9ebe5e6b1ca540a933c79fa673987,
+        type: 2}
+      propertyPath: cameraDestination
+      value: 
+      objectReference: {fileID: 836180461}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9ebe5e6b1ca540a933c79fa673987, type: 2}
   m_IsPrefabAsset: 0
@@ -21622,6 +21637,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4382899510264622, guid: aa7e360b07c9b4648ae0438dace63191,
     type: 2}
   m_PrefabInternal: {fileID: 2060725868}
+--- !u!1 &2078287076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078287077}
+  m_Layer: 0
+  m_Name: Teleport Spot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078287077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078287076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.67, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2081846124
 GameObject:
   m_ObjectHideFlags: 0
