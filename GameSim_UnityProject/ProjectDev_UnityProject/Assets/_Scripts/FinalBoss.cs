@@ -16,22 +16,24 @@ public class FinalBoss : MonoBehaviour
    Direction direction;
    Bow bow;
    Sword sword;
+   EnemyHealth enemyHealth;
 
    // Use this for initialization
-   void Awake ( )
+   void Awake()
    {
       direction = GetComponent<Direction>();
       player = GameObject.FindGameObjectWithTag("Player").transform;
       m_rigidBody = GetComponent<Rigidbody2D>();
       bow = GetComponent<Bow>();
       sword = GetComponentInChildren<Sword>();
+      enemyHealth = GetComponent<EnemyHealth>();
    }
 
    // Update is called once per frame
-   void FixedUpdate ( )
+   void FixedUpdate()
    {
       float detectDistance = (player.transform.position - transform.position).sqrMagnitude;
-      DeterminAction(detectDistance);
+      DetermineAction(detectDistance);
 
       if (moveCloser)
       {
@@ -49,7 +51,7 @@ public class FinalBoss : MonoBehaviour
       }
    }
 
-   public void DeterminAction (float detectDistance )
+   public void DetermineAction(float detectDistance)
    {
       if (detectDistance <= detectRange)
       {
@@ -83,7 +85,7 @@ public class FinalBoss : MonoBehaviour
    }
 
 
-   public void LineUpShot ( )
+   public void LineUpShot()
    {
       float xDist = player.transform.position.x - transform.position.x;
       float yDist = player.transform.position.y - transform.position.y;
@@ -113,7 +115,7 @@ public class FinalBoss : MonoBehaviour
       bow.Use();
    }
 
-   private void SetDirection ( )
+   private void SetDirection()
    {
       if (player.position.y > transform.position.y)
          direction.SetFacing(Direction.Facing.Up);
@@ -128,5 +130,14 @@ public class FinalBoss : MonoBehaviour
             direction.SetFacing(Direction.Facing.Left);
       }
 
+   }
+
+   ~FinalBoss()
+   {
+      if (enemyHealth.health < 1)
+      {
+         ProgressManager.bossIsDead = true;
+         Debug.Log("In Destructor");
+      }
    }
 }

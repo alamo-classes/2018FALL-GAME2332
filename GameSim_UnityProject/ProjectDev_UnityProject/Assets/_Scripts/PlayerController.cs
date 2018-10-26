@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
    float timer;
    bool doubleDash = false;
    bool canDoubleDash = false;
+   ProgressManager progressManager;
 
 
    void Awake()
@@ -99,6 +100,7 @@ public class PlayerController : MonoBehaviour
       {
          doubleDash = true;
          Destroy(other.gameObject);
+         ProgressManager.hasDoubleDash = true;
       }
    }
 }

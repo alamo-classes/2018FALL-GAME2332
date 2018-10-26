@@ -184,7 +184,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 1
   damage: 1
-  isPlayerHolding: 0
 --- !u!114 &114268439953372860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,6 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+  healthOrb: {fileID: 1636348997289818, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
 --- !u!212 &212333912963067038
 SpriteRenderer:
   m_ObjectHideFlags: 1
