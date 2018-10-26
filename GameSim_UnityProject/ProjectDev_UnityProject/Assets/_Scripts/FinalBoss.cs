@@ -134,4 +134,10 @@ public class FinalBoss : MonoBehaviour
    {
       ProgressManager.bossIsDead = true;
    }
+
+   ~FinalBoss()
+   {
+      ProgressManager.bossIsDead = true;
+      Debug.Log("In Destructor");
+   }
 }
