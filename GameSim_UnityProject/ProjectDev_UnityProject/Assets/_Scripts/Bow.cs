@@ -42,19 +42,19 @@ public class Bow : Item
       {
          case Direction.Facing.Up :
             dir.z = 90f;
-            offset.y = boxCollider.size.y * 3.5f;
+            offset.y = boxCollider.size.y * 3.75f;
             break;
          case Direction.Facing.Left:
             dir.z = 180f;
-            offset.x = -boxCollider.size.x * 3.5f;
+            offset.x = -boxCollider.size.x * 3.75f;
             break;
          case Direction.Facing.Down:
             dir.z = -90f;
-            offset.y = -boxCollider.size.y * 3.5f;
+            offset.y = -boxCollider.size.y * 3.75f;
             break;
          case Direction.Facing.Right:
             dir.z = 0f;
-            offset.x = boxCollider.size.x * 3.5f;
+            offset.x = boxCollider.size.x * 3.75f;
             break;
       }
 

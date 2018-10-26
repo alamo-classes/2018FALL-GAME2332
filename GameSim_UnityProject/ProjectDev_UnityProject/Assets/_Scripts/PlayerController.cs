@@ -74,13 +74,13 @@ public class PlayerController : MonoBehaviour
             playerRigidbody.AddForce(movement * dashSpeed);
             timer = 0f;
             canDoubleDash = true;
-            Debug.Log("First dash...");
+            //Debug.Log("First dash...");
          }
          else if (Input.GetKeyDown(KeyCode.Space) && canDoubleDash)
          {
             playerRigidbody.AddForce(movement * dashSpeed);
             canDoubleDash = false;
-            Debug.Log("Second dash...");
+            //Debug.Log("Second dash...");
          }
       }
       else
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
          {
             playerRigidbody.AddForce(movement * dashSpeed);
             timer = 0f;
-            Debug.Log("Single dash...");
+            //Debug.Log("Single dash...");
          }
       }
    }

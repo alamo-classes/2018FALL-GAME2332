@@ -31,18 +31,18 @@ public class Arrow : MonoBehaviour
 
    void OnTriggerEnter2D ( Collider2D other )
    {
-      Debug.Log(other.name);
+      //Debug.Log(other.name);
       if (other.tag == "Enemy")
       {
          other.gameObject.GetComponent<EnemyHealth>().RemoveHealth(damage);
-         Debug.Log("hit Enemy");
+         //Debug.Log("hit Enemy");
          //SelfDestruct();
       }
 
       if ( other.tag == "Player")
       {
          other.gameObject.GetComponent<PlayerHealth>().LoseHealth(damage);
-         Debug.Log("Hit Player");
+         //Debug.Log("Hit Player");
          //SelfDestruct();
       }
       SelfDestruct();
