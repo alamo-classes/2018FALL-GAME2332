@@ -40,7 +40,7 @@ public class PlayerInventory : MonoBehaviour
          Debug.Log("Current Item: " + inHand.gameObject.name);
       }
 
-      Debug.Log("HandPos: " + handPos);
+      //Debug.Log("HandPos: " + handPos);
 
       //if 'K' -> use
       if (Input.GetKeyDown(KeyCode.K) && inHand != null)
