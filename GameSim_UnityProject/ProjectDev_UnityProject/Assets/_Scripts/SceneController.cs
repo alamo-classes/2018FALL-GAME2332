@@ -5,17 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-   // Singleton
-   void Awake ( )
-   {
-      int numOfMusicControllers = FindObjectsOfType<SceneController>().Length;
-
-      if (numOfMusicControllers > 1)
-         Destroy(gameObject);
-      else
-         DontDestroyOnLoad(this.gameObject);
-
-   }
 
    public void LoadLevel ( string levelName )
    {
