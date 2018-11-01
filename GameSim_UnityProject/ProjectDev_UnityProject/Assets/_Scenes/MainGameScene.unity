@@ -1003,6 +1003,10 @@ Prefab:
       propertyPath: cameraPosition
       value: 
       objectReference: {fileID: 836180461}
+    - target: {fileID: 1150578280700226, guid: 67539e410cffab6408f9e040ab0801ad, type: 2}
+      propertyPath: m_TagString
+      value: Village
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67539e410cffab6408f9e040ab0801ad, type: 2}
   m_IsPrefabAsset: 0
@@ -2730,7 +2734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   villageTheme: {fileID: 8300000, guid: b65ed24d9d5a22743b2e5b17b794e1ae, type: 3}
   inCombatTheme: {fileID: 0}
-  outOfCombatTheme: {fileID: 0}
+  outOfCombatTheme: {fileID: 8300000, guid: 13b18740041975e43b9c0cd863d021e7, type: 3}
 --- !u!82 &270817436
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2751,7 +2755,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 51.931316
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -8484,6 +8488,10 @@ Prefab:
     - target: {fileID: 1150578280700226, guid: 67539e410cffab6408f9e040ab0801ad, type: 2}
       propertyPath: m_Name
       value: Camera Change Trigger (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150578280700226, guid: 67539e410cffab6408f9e040ab0801ad, type: 2}
+      propertyPath: m_TagString
+      value: OpenWorld
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67539e410cffab6408f9e040ab0801ad, type: 2}
