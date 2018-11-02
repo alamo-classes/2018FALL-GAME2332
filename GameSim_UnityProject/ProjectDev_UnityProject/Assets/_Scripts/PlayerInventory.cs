@@ -12,7 +12,7 @@ public class PlayerInventory : MonoBehaviour
    void Update()
    {
       //Q & E Switch
-      if (Input.GetKeyDown(KeyCode.Q))
+      if (Input.GetKeyDown(KeyCode.Q) && loadPos > 0)
       {
          int newPos = handPos;
          newPos--;
@@ -26,7 +26,7 @@ public class PlayerInventory : MonoBehaviour
          Debug.Log("Current Item: " + inHand.gameObject.name);
       }
 
-      if (Input.GetKeyDown(KeyCode.E))
+      if (Input.GetKeyDown(KeyCode.E) && loadPos > 0)
       {
          int newPos = handPos;
          newPos++;
