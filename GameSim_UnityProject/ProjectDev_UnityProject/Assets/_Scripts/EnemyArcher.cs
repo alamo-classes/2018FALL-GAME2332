@@ -32,11 +32,13 @@ public class EnemyArcher : MonoBehaviour
       if (detectDistance <= detectRange)
       {
          moveCloser = true;
-         SetDiretion();
+         SetDirection();
+         AudioManager.inCombat = true;
       }
       else
       {
          moveCloser = false;
+         AudioManager.inCombat = false;
       }
 
       if ( detectDistance <= attackRange)
@@ -89,7 +91,7 @@ public class EnemyArcher : MonoBehaviour
       item.Use();
    }
 
-   private void SetDiretion ( )
+   private void SetDirection ( )
    {
       if (player.position.y > transform.position.y)
          direction.SetFacing(Direction.Facing.Up);

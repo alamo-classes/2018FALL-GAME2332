@@ -25,9 +25,15 @@ public class EnemyMovement : MonoBehaviour
       float detectDistance = (player.position - transform.position).sqrMagnitude;
 
       if (detectDistance <= detectRange)
+      {
          inRange = true;
+         AudioManager.inCombat = true;
+      }
       else
+      {
          inRange = false;
+         AudioManager.inCombat = false;
+      }
 
       if (inRange)
          transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
