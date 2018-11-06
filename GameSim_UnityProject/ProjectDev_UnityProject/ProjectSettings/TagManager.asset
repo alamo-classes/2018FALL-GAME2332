@@ -9,8 +9,8 @@ TagManager:
   - KeyItem
   - FakeObjectRegistry
   - RevealHiddenObjects
-  - OpenWorld
   - Village
+  - OpenWorld
   layers:
   - Default
   - TransparentFX

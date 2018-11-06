@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
    public AudioClip outOfCombatTheme;
    AudioSource backgroundMusic;
    public static bool inCombat = false;
+   public static bool inVillage = true;
 
    void Start()
    {
@@ -19,30 +20,25 @@ public class AudioManager : MonoBehaviour
 
    private void Update()
    {
-      if (inCombat)
+      if (inCombat && backgroundMusic.clip != inCombatTheme)
       {
          backgroundMusic.clip = inCombatTheme;
          backgroundMusic.Play();
       }
-      else if (!inCombat)
-      {
-         backgroundMusic.clip = outOfCombatTheme;
-         backgroundMusic.Play();
-      }
-   }
 
-   void OnTriggerEnter2D(Collider2D other)
-   {
-      if (other.CompareTag("OpenWorld") && backgroundMusic.clip != outOfCombatTheme)
+      if (!inCombat && !inVillage && backgroundMusic.clip != outOfCombatTheme)
       {
          backgroundMusic.clip = outOfCombatTheme;
          backgroundMusic.Play();
       }
 
-      if (other.CompareTag("Village") && backgroundMusic.clip != villageTheme)
+      if (!inCombat && inVillage && backgroundMusic.clip != villageTheme)
       {
          backgroundMusic.clip = villageTheme;
          backgroundMusic.Play();
       }
+
+      Debug.Log("In the village: " + inVillage);
+      Debug.Log("In combat: " + inCombat);
    }
 }

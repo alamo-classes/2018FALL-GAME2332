@@ -27,7 +27,7 @@ public class EnemySwordsman : MonoBehaviour
    void FixedUpdate ( )
    {
       float detectDistance = (player.transform.position - transform.position).sqrMagnitude;
-      DeterminAction(detectDistance);
+      DetermineAction(detectDistance);
 
       if (moveCloser)
       {
@@ -41,7 +41,7 @@ public class EnemySwordsman : MonoBehaviour
       }
    }
 
-   public void DeterminAction ( float detectDistance )
+   public void DetermineAction ( float detectDistance )
    {
       if (detectDistance <= detectRange)
       {

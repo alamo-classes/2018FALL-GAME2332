@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
    public Transform[] route;
    private int currentRouteDest;
    private int nextRouteDest;
+   int addCounter = 0;
 
    void Start()
    {
@@ -32,13 +33,24 @@ public class EnemyMovement : MonoBehaviour
       else
       {
          inRange = false;
-         AudioManager.inCombat = false;
       }
 
       if (inRange)
          transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
       else
          Patrol();
+
+      if (inRange && addCounter < 1)
+      {
+         PlayerController.enemiesInRange++;
+         addCounter++;
+      }
+
+      if (!inRange && addCounter > 0)
+      {
+         PlayerController.enemiesInRange--;
+         addCounter--;
+      }
    }
 
    void Patrol()
@@ -50,5 +62,10 @@ public class EnemyMovement : MonoBehaviour
 
       currentRouteDest = nextRouteDest;
       nextRouteDest = (currentRouteDest + 1) % route.Length;
+   }
+
+   ~EnemyMovement()
+   {
+      PlayerController.enemiesInRange--;
    }
 }

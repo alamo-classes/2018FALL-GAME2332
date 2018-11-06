@@ -13,6 +13,7 @@ public class EnemyArcher : MonoBehaviour
    Rigidbody2D m_rigidBody;
    Direction direction;
    Item item;
+   int addCounter = 0;
 
    // Use this for initialization
    void Awake ( )
@@ -38,7 +39,6 @@ public class EnemyArcher : MonoBehaviour
       else
       {
          moveCloser = false;
-         AudioManager.inCombat = false;
       }
 
       if ( detectDistance <= attackRange)
@@ -58,6 +58,18 @@ public class EnemyArcher : MonoBehaviour
       else if ( inRange )
       {
          LineUpShot();
+      }
+
+      if (inRange && addCounter < 1)
+      {
+         PlayerController.enemiesInRange++;
+         addCounter++;
+      }
+
+      if (!inRange && addCounter > 0)
+      {
+         PlayerController.enemiesInRange--;
+         addCounter--;
       }
    }
 
@@ -108,4 +120,8 @@ public class EnemyArcher : MonoBehaviour
 
    }
 
+   ~EnemyArcher()
+   {
+      PlayerController.enemiesInRange--;
+   }
 }
