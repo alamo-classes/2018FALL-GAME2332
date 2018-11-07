@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
    bool doubleDash = false;
    bool canDoubleDash = false;
    ProgressManager progressManager;
+   public static int enemiesInRange = 0;
 
 
    void Awake()
@@ -43,6 +44,11 @@ public class PlayerController : MonoBehaviour
          playerAnimator.SetFloat("horizontal", 0f);
          playerAnimator.SetFloat("vertical", 0f);
       }
+
+      if (enemiesInRange == 0)
+         AudioManager.inCombat = false;
+
+      Debug.Log("Enemies in range: " + enemiesInRange);
    }
 
    void Move(float h, float v)
@@ -51,7 +57,7 @@ public class PlayerController : MonoBehaviour
       playerAnimator.SetFloat("vertical", v);
 
       if (v > 0)
-         direction.SetFacing( Direction.Facing.Up);
+         direction.SetFacing(Direction.Facing.Up);
       else if (v < 0)
          direction.SetFacing(Direction.Facing.Down);
       if (h > 0)
@@ -102,5 +108,11 @@ public class PlayerController : MonoBehaviour
          Destroy(other.gameObject);
          ProgressManager.hasDoubleDash = true;
       }
+
+      if (other.CompareTag("Village"))
+         AudioManager.inVillage = true;
+
+      if (other.CompareTag("OpenWorld"))
+         AudioManager.inVillage = false;
    }
 }
