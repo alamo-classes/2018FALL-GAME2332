@@ -13,9 +13,9 @@ public class EnemySwordsman : MonoBehaviour
    Rigidbody2D m_rigidBody;
    Direction direction;
    Sword sword;
+   int addCounter = 0;
 
-   // Use this for initialization
-   void Awake ( )
+   void Awake()
    {
       direction = GetComponent<Direction>();
       player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -23,11 +23,10 @@ public class EnemySwordsman : MonoBehaviour
       sword = GetComponentInChildren<Sword>();
    }
 
-   // Update is called once per frame
-   void FixedUpdate ( )
+   void FixedUpdate()
    {
       float detectDistance = (player.transform.position - transform.position).sqrMagnitude;
-      DeterminAction(detectDistance);
+      DetermineAction(detectDistance);
 
       if (moveCloser)
       {
@@ -41,11 +40,12 @@ public class EnemySwordsman : MonoBehaviour
       }
    }
 
-   public void DeterminAction ( float detectDistance )
+   public void DetermineAction(float detectDistance)
    {
       if (detectDistance <= detectRange)
       {
          moveCloser = true;
+         AudioManager.inCombat = true;
          SetDirection();
       }
       else
@@ -61,9 +61,21 @@ public class EnemySwordsman : MonoBehaviour
       {
          inSwordRange = false;
       }
+
+      if ((moveCloser ||inSwordRange) && addCounter < 1)
+      {
+         PlayerController.enemiesInRange++;
+         addCounter++;
+      }
+
+      if (!moveCloser && !inSwordRange && addCounter > 0)
+      {
+         PlayerController.enemiesInRange--;
+         addCounter--;
+      }
    }
 
-   private void SetDirection ( )
+   private void SetDirection()
    {
       if (player.position.y > transform.position.y)
          direction.SetFacing(Direction.Facing.Up);
@@ -77,6 +89,10 @@ public class EnemySwordsman : MonoBehaviour
          else
             direction.SetFacing(Direction.Facing.Left);
       }
+   }
 
+   void OnDestroy()
+   {
+      PlayerController.enemiesInRange--;
    }
 }
