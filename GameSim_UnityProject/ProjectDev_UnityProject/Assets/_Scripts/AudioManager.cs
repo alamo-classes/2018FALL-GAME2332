@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
          backgroundMusic.Play();
       }
 
-      Debug.Log("In the village: " + inVillage);
+      //Debug.Log("In the village: " + inVillage);
       Debug.Log("In combat: " + inCombat);
    }
 }
