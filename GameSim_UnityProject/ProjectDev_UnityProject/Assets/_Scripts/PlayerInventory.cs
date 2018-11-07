@@ -7,7 +7,7 @@ public class PlayerInventory : MonoBehaviour
    Item[] inventory = new Item[9];
    int loadPos = 0;
    int handPos = 0;
-   Item inHand = null;
+   public Item inHand = null;
 
    void Update()
    {
