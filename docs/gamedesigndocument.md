@@ -62,6 +62,7 @@ Soft Collision for enemies and hard collision for everything else
 * Bow - Subtracts enemy health from a distance if projectile hits
 * Light Source - Provides light to dark areas
 * Magical Sight - Reveal hidden areas on the Island
+* Teleport - Returns the player to the village
 
 ### Art
 
