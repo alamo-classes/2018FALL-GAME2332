@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114900150443995754}
   - component: {fileID: 114268439953372860}
   - component: {fileID: 114027522316834098}
+  - component: {fileID: 95587586445239686}
   m_Layer: 0
   m_Name: Captain Skott
   m_TagString: Enemy
@@ -111,9 +112,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 0.4, y: 0.58}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -147,6 +148,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
+--- !u!95 &95587586445239686
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1153200884490760}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cc2db0d137a5ab4787f67ea38d7d862, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114027522316834098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2bdef641169724b8846c093bf9ba83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemImage: {fileID: 0}
   arrow: {fileID: 1382790132733372, guid: e67ec08c17b42e046ada1ea94e6cb2c8, type: 2}
   fireRate: 1
 --- !u!114 &114062056991257316
@@ -247,8 +267,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.33962262, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300014, guid: ee0cd09979c80f14f857d050dd031ee3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
