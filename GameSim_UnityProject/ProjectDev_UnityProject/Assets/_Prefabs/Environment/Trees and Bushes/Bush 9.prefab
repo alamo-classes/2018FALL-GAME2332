@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212950030202654586}
   - component: {fileID: 58138300803300908}
   m_Layer: 0
-  m_Name: Bush 8
+  m_Name: Bush 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,7 +55,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.1
 --- !u!212 &212950030202654586
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: adc39ee6c08ed9a468c6745574cc56cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 185d8c27b030be744be289156c14f94f, type: 3}
   m_Color: {r: 0.9954796, g: 1, b: 0.995283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
