@@ -20,7 +20,7 @@
 ---
 
 ## Story
-On a dark and stormy night, an island village is attacked by a band of pirates seeking the island's treasures of power. So that he may be spared, a young boy is told to seek shelter in the village shrine. In the aftermath of the attack, the boy witnesses the destruction left behind and prays to the island gods. They answer his prayers and bestow upon him a communicative amulet, with instructions to gather the treasures before the pirates.
+During a large storm a group of pirates land on an island they have been told has 8 mystical artifacts. To avoid disturbance from the locals they attack their village, killing many of the villagers. Believing they will no longer be interupted the pirates begin searching for the artifacts while the rest of the villagers run into the forest. Regrouping the survivors Ukk, the village shaman and leader, speaks to them. He tells them their diety has foreseen this event and that a hero must gather all the artifacts first and defeat the pirates. The diety then chooses the player and his quest begins. The player gathers the items with the guidance of Ukk and challenges the pirate leader. After the leaders defeat the pirates flee the island and the villagers begin rebuilding.
 ### Genre
 2D adventure platformer
 ### World
@@ -62,6 +62,7 @@ Soft Collision for enemies and hard collision for everything else
 * Bow - Subtracts enemy health from a distance if projectile hits
 * Light Source - Provides light to dark areas
 * Magical Sight - Reveal hidden areas on the Island
+* Teleport - Returns the player to the village
 
 ### Art
 
