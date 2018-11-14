@@ -17,6 +17,7 @@ public class FinalBoss : MonoBehaviour
    Bow bow;
    Sword sword;
    EnemyHealth enemyHealth;
+   Animator bossAnim;
 
    // Use this for initialization
    void Awake()

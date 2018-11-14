@@ -2837,14 +2837,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4382899510264622, guid: aa7e360b07c9b4648ae0438dace63191, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4382899510264622, guid: aa7e360b07c9b4648ae0438dace63191, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1058180789373466, guid: aa7e360b07c9b4648ae0438dace63191, type: 2}
       propertyPath: m_Name
       value: EnemySwordsman (1)
