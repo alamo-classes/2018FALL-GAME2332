@@ -9,14 +9,23 @@ public class ProgressManager : MonoBehaviour
    public static bool hasRevealHiddenObjects = false;
    public static bool bossIsDead = false;
 
+	bool allItems = false;
+	bool finalBossDone = false;
+
    void Update()
    {
       if (keyItemCounter == 4 && hasDoubleDash && hasRevealHiddenObjects)
       {
-         Debug.Log("Thing done!");
+			allItems = true;
       }
 
       if (bossIsDead)
-         Debug.Log("You win!");
+			finalBossDone = true;
+
    }
+
+	public bool hasWon()
+	{
+		return (allItems && finalBossDone);
+	}
 }
