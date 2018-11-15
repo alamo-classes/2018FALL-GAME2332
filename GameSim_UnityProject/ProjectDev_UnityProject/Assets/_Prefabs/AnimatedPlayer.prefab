@@ -42,10 +42,10 @@ GameObject:
   - component: {fileID: 95345262632747666}
   - component: {fileID: 114772949304913474}
   - component: {fileID: 114629886539912364}
-  - component: {fileID: 114772501882357472}
   - component: {fileID: 114491947319393772}
   - component: {fileID: 82239239248977910}
   - component: {fileID: 114151023541672110}
+  - component: {fileID: 114561094214101916}
   m_Layer: 0
   m_Name: AnimatedPlayer
   m_TagString: Player
@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994ecb0b6fbf5264e88870b1b67ee870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inHand: {fileID: 0}
 --- !u!114 &114517235582754196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,6 +367,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0.15
   damage: 1
+--- !u!114 &114561094214101916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419422095631852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2d2c65d9fab82a4191c6a77884b7bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  villageTheme: {fileID: 8300000, guid: b65ed24d9d5a22743b2e5b17b794e1ae, type: 3}
+  inCombatTheme: {fileID: 8300000, guid: 1be1c3edd5271f146937c2293ba07d8a, type: 3}
+  outOfCombatTheme: {fileID: 8300000, guid: b402d76ddc4c75142ae4b42d2a5e0a6d, type: 3}
 --- !u!114 &114629886539912364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -381,19 +396,6 @@ MonoBehaviour:
   invulnerableTime: 0
   canTakeDamage: 1
   gameOverScreen: {fileID: 0}
---- !u!114 &114772501882357472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1419422095631852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57c7ff1efb78fc64fa9db174345e032c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeTime: 2
-  coolDownTime: 5
 --- !u!114 &114772949304913474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -443,7 +445,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4037b364013881145a019a23886c980b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
