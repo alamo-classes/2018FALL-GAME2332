@@ -14,6 +14,7 @@ public class EnemySwordsman : MonoBehaviour
    Direction direction;
    Sword sword;
    int addCounter = 0;
+   Animator swordsmanAnim;
 
    void Awake()
    {
@@ -21,6 +22,7 @@ public class EnemySwordsman : MonoBehaviour
       player = GameObject.FindGameObjectWithTag("Player").transform;
       m_rigidBody = GetComponent<Rigidbody2D>();
       sword = GetComponentInChildren<Sword>();
+      swordsmanAnim = GetComponent<Animator>();
    }
 
    void FixedUpdate()
@@ -46,16 +48,19 @@ public class EnemySwordsman : MonoBehaviour
       {
          moveCloser = true;
          AudioManager.inCombat = true;
+         swordsmanAnim.SetBool("isMoving", true);
          SetDirection();
       }
       else
       {
          moveCloser = false;
+         swordsmanAnim.SetBool("isMoving", false);
       }
       if (detectDistance <= swordAttackRange)
       {
          inSwordRange = true;
          moveCloser = false;
+         swordsmanAnim.SetBool("isMoving", false);
       }
       else
       {
@@ -78,16 +83,28 @@ public class EnemySwordsman : MonoBehaviour
    private void SetDirection()
    {
       if (player.position.y > transform.position.y)
+      {
          direction.SetFacing(Direction.Facing.Up);
+         swordsmanAnim.SetInteger("vertical", 1);
+      }
       else
+      {
          direction.SetFacing(Direction.Facing.Down);
+         swordsmanAnim.SetInteger("vertical", -1);
+      }
 
       if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
       {
          if (player.position.x > transform.position.x)
+         {
             direction.SetFacing(Direction.Facing.Right);
+            swordsmanAnim.SetInteger("horizontal", 1);
+         }
          else
+         {
             direction.SetFacing(Direction.Facing.Left);
+            swordsmanAnim.SetInteger("horizontal", -1);
+         }
       }
    }
 
