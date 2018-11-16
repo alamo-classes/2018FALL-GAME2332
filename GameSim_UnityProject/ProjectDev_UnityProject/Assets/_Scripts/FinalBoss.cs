@@ -17,6 +17,7 @@ public class FinalBoss : MonoBehaviour
    Bow bow;
    Sword sword;
    EnemyHealth enemyHealth;
+   Animator bossAnim;
 
    // Use this for initialization
    void Awake()
@@ -27,6 +28,7 @@ public class FinalBoss : MonoBehaviour
       bow = GetComponent<Bow>();
       sword = GetComponentInChildren<Sword>();
       enemyHealth = GetComponent<EnemyHealth>();
+      bossAnim = GetComponent<Animator>();
    }
 
    // Update is called once per frame
@@ -56,17 +58,20 @@ public class FinalBoss : MonoBehaviour
       if (detectDistance <= detectRange)
       {
          moveCloser = true;
+         bossAnim.SetBool("isMoving", true);
          SetDirection();
       }
       else
       {
          moveCloser = false;
+         bossAnim.SetBool("isMoving", false);
       }
 
       if (detectDistance <= attackRange)
       {
          inBowRange = true;
          moveCloser = false;
+         bossAnim.SetBool("isMoving", false);
       }
       else
       {
@@ -77,6 +82,7 @@ public class FinalBoss : MonoBehaviour
          inSwordRange = true;
          inBowRange = false;
          moveCloser = false;
+         bossAnim.SetBool("isMoving", false);
       }
       else
       {
@@ -118,16 +124,28 @@ public class FinalBoss : MonoBehaviour
    private void SetDirection()
    {
       if (player.position.y > transform.position.y)
+      {
          direction.SetFacing(Direction.Facing.Up);
+         bossAnim.SetInteger("vertical", 1);
+      }
       else
+      {
          direction.SetFacing(Direction.Facing.Down);
+         bossAnim.SetInteger("vertical", -1);
+      }
 
       if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
       {
          if (player.position.x > transform.position.x)
+         {
             direction.SetFacing(Direction.Facing.Right);
+            bossAnim.SetInteger("horizontal", 1);
+         }
          else
+         {
             direction.SetFacing(Direction.Facing.Left);
+            bossAnim.SetInteger("horizontal", -1);
+         }
       }
 
    }

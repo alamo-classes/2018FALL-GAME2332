@@ -39,6 +39,6 @@ public class AudioManager : MonoBehaviour
       }
 
       //Debug.Log("In the village: " + inVillage);
-      Debug.Log("In combat: " + inCombat);
+      //Debug.Log("In combat: " + inCombat);
    }
 }

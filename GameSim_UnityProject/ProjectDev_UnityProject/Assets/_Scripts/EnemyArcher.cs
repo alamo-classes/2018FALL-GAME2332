@@ -14,6 +14,7 @@ public class EnemyArcher : MonoBehaviour
    Direction direction;
    Item item;
    int addCounter = 0;
+   Animator archerAnim;
 
    void Awake()
    {
@@ -21,6 +22,7 @@ public class EnemyArcher : MonoBehaviour
       player = GameObject.FindGameObjectWithTag("Player").transform;
       m_rigidBody = GetComponent<Rigidbody2D>();
       item = GetComponent<Item>();
+      archerAnim = GetComponent<Animator>();
    }
 
    void FixedUpdate()
@@ -32,30 +34,37 @@ public class EnemyArcher : MonoBehaviour
       {
          moveCloser = true;
          AudioManager.inCombat = true;
+         archerAnim.SetBool("isMoving", true);
          SetDirection();
       }
       else
       {
          moveCloser = false;
+         archerAnim.SetBool("isMoving", false);
       }
 
       if (detectDistance <= attackRange)
       {
          inRange = true;
          moveCloser = false;
+         archerAnim.SetBool("isMoving", false);
       }
       else
       {
          inRange = false;
+         archerAnim.SetInteger("vertical", 0);
+         archerAnim.SetInteger("horizontal", 0);
       }
 
       if (moveCloser)
       {
          m_rigidBody.MovePosition(Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime));
+         archerAnim.SetBool("isMoving", true);
       }
       else if (inRange)
       {
          LineUpShot();
+         archerAnim.SetBool("isMoving", true);
       }
 
       if ((moveCloser || inRange) && addCounter < 1)
@@ -104,16 +113,32 @@ public class EnemyArcher : MonoBehaviour
    private void SetDirection()
    {
       if (player.position.y > transform.position.y)
+      {
          direction.SetFacing(Direction.Facing.Up);
+         archerAnim.SetInteger("vertical", 1);
+         archerAnim.SetInteger("horizontal", 0);
+      }
       else
+      {
          direction.SetFacing(Direction.Facing.Down);
+         archerAnim.SetInteger("vertical", -1);
+         archerAnim.SetInteger("horizontal", 0);
+      }
 
       if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
       {
          if (player.position.x > transform.position.x)
+         {
             direction.SetFacing(Direction.Facing.Right);
+            archerAnim.SetInteger("horizontal", 1);
+            archerAnim.SetInteger("vertical", 0);
+         }
          else
+         {
             direction.SetFacing(Direction.Facing.Left);
+            archerAnim.SetInteger("horizontal", -1);
+            archerAnim.SetInteger("vertical", 0);
+         }
       }
 
    }

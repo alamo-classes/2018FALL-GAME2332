@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
       if (enemiesInRange == 0)
          AudioManager.inCombat = false;
 
-      Debug.Log("Enemies in range: " + enemiesInRange);
+      //Debug.Log("Enemies in range: " + enemiesInRange);
    }
 
    void Move(float h, float v)
