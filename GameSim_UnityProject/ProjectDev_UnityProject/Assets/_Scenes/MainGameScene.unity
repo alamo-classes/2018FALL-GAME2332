@@ -2457,6 +2457,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518ced4b728df8c47a826c1e4dc08201, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &986977543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114032177044456458, guid: 518ced4b728df8c47a826c1e4dc08201,
+    type: 2}
+  m_PrefabInternal: {fileID: 986977542}
+  m_Script: {fileID: 11500000, guid: 9f09284d2dd2107448f3b72231f5618f, type: 3}
 --- !u!1001 &994958321
 Prefab:
   m_ObjectHideFlags: 0
@@ -4412,6 +4418,11 @@ Prefab:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 1746146021}
+    - target: {fileID: 114477324372605000, guid: 740aecad65eb21543966edb34d3317a2,
+        type: 2}
+      propertyPath: winner
+      value: 
+      objectReference: {fileID: 986977543}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 740aecad65eb21543966edb34d3317a2, type: 2}
   m_IsPrefabAsset: 0
