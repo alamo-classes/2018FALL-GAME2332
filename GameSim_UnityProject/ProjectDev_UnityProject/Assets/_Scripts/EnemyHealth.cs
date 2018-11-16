@@ -9,6 +9,13 @@ public class EnemyHealth : MonoBehaviour
 
    public GameObject healthOrb;
 
+   private SpriteRenderer spriteRenderer;
+
+   private void Awake ( )
+   {
+      spriteRenderer = GetComponent<SpriteRenderer>();
+   }
+
    void Update()
    {
       if (health <= 0)
@@ -28,5 +35,17 @@ public class EnemyHealth : MonoBehaviour
    public void RemoveHealth(float damage = 1)
    {
       health -= damage;
+      if (health > 0)
+      {
+         spriteRenderer.color = Color.red;
+         Invoke("ResetSpriteRenderer", .3f);
+      }
    }
+
+   private void ResetSpriteRenderer ( )
+   {
+      spriteRenderer.color = Color.white;
+   }
+
+
 }

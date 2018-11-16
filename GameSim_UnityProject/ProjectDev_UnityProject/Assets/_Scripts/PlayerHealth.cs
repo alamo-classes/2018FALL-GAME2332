@@ -14,11 +14,13 @@ public class PlayerHealth : MonoBehaviour
    AudioSource deathSound;
    public GameObject gameOverScreen;
    PlayerController controls;
+   SpriteRenderer spriteRenderer;
 
    void Start()
    {
       deathSound = GetComponent<AudioSource>();
       controls = GetComponent<PlayerController>();
+      spriteRenderer = GetComponent<SpriteRenderer>();
    }
 
    public void Update()
@@ -41,11 +43,21 @@ public class PlayerHealth : MonoBehaviour
    public void LoseHealth(float damage = 1)
    {
       if (canTakeDamage)
+      {
          health -= damage;
+         spriteRenderer.color = Color.red;
+         Invoke("ResetSpriteRenderer", .3f);
+      }
 
       if (health <= 0)
          Death();
    }
+
+   private void ResetSpriteRenderer ( )
+   {
+      spriteRenderer.color = Color.white;
+   }
+
 
    private void OnTriggerEnter2D(Collider2D other)
    {
