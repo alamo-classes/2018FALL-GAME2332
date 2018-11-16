@@ -52,15 +52,19 @@ public class EnemyArcher : MonoBehaviour
       else
       {
          inRange = false;
+         archerAnim.SetInteger("vertical", 0);
+         archerAnim.SetInteger("horizontal", 0);
       }
 
       if (moveCloser)
       {
          m_rigidBody.MovePosition(Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime));
+         archerAnim.SetBool("isMoving", true);
       }
       else if (inRange)
       {
          LineUpShot();
+         archerAnim.SetBool("isMoving", true);
       }
 
       if ((moveCloser || inRange) && addCounter < 1)
@@ -112,11 +116,13 @@ public class EnemyArcher : MonoBehaviour
       {
          direction.SetFacing(Direction.Facing.Up);
          archerAnim.SetInteger("vertical", 1);
+         archerAnim.SetInteger("horizontal", 0);
       }
       else
       {
          direction.SetFacing(Direction.Facing.Down);
          archerAnim.SetInteger("vertical", -1);
+         archerAnim.SetInteger("horizontal", 0);
       }
 
       if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
@@ -125,11 +131,13 @@ public class EnemyArcher : MonoBehaviour
          {
             direction.SetFacing(Direction.Facing.Right);
             archerAnim.SetInteger("horizontal", 1);
+            archerAnim.SetInteger("vertical", 0);
          }
          else
          {
             direction.SetFacing(Direction.Facing.Left);
             archerAnim.SetInteger("horizontal", -1);
+            archerAnim.SetInteger("vertical", 0);
          }
       }
 
