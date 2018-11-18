@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GenericNPC : MonoBehaviour
 {
+
+   [SerializeField] GameObject dialogueBox;
    [SerializeField] Text text;
    [SerializeField] string[] dialogue;
 
@@ -12,6 +14,7 @@ public class GenericNPC : MonoBehaviour
    void Start ( )
    {
       text.text = "";
+      dialogueBox.SetActive(false);
    }
 
    // Update is called once per frame
@@ -27,6 +30,7 @@ public class GenericNPC : MonoBehaviour
       {
          int rand = Random.Range(0, dialogue.Length);
          text.text = dialogue[rand];
+         dialogueBox.SetActive(true);
       }
    }
 
@@ -35,6 +39,7 @@ public class GenericNPC : MonoBehaviour
       if ( other.tag == "Player" )
       {
          text.text = "";
+         dialogueBox.SetActive(false);
       }
    }
 }
