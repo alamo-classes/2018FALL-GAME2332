@@ -6,6 +6,7 @@ public class Shield : Item
 {
    public float activeTime = 2f;
    public float coolDownTime = 5f;
+   public GameObject shield;
 
    private PlayerController playerController;
    private PlayerHealth playerHealth;
@@ -17,6 +18,7 @@ public class Shield : Item
    {
       playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
       playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+      shield.SetActive(false);
 
    }
 
@@ -43,6 +45,7 @@ public class Shield : Item
    private void Activate ( )
    {
       Debug.Log("Shield activated");
+      shield.SetActive(true);
       playerHealth.canTakeDamage = false;
       playerController.canMove = false;
       Invoke("Deactivate", activeTime);
@@ -51,6 +54,7 @@ public class Shield : Item
    private void Deactivate ( )
    {
       Debug.Log("Shield deactivated");
+      shield.SetActive(false);
       playerHealth.canTakeDamage = true;
       playerController.canMove = true;
    }
