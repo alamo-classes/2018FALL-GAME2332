@@ -36,8 +36,12 @@ public class PlayerHealth : MonoBehaviour
 
    public void AddHealth(float heal = 1)
    {
-      if ( health < 5)
+      if (health < 5)
+      {
          health += heal;
+         spriteRenderer.color = Color.green;
+         Invoke("ResetSpriteRenderer", .3f);
+      }
    }
 
    public void LoseHealth(float damage = 1)
