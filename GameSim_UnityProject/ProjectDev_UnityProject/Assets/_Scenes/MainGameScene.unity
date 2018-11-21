@@ -3428,25 +3428,6 @@ Transform:
   m_Father: {fileID: 1957897065}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1389001010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1419422095631852, guid: 99422b3a20e9f304c8f5a311771952de,
-    type: 2}
-  m_PrefabInternal: {fileID: 1746146020}
---- !u!114 &1389001019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1389001010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2d2c65d9fab82a4191c6a77884b7bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  villageTheme: {fileID: 8300000, guid: b65ed24d9d5a22743b2e5b17b794e1ae, type: 3}
-  inCombatTheme: {fileID: 8300000, guid: 1be1c3edd5271f146937c2293ba07d8a, type: 3}
-  outOfCombatTheme: {fileID: 8300000, guid: b402d76ddc4c75142ae4b42d2a5e0a6d, type: 3}
 --- !u!1001 &1437244468
 Prefab:
   m_ObjectHideFlags: 0
@@ -3554,6 +3535,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4818225867494054, guid: 67539e410cffab6408f9e040ab0801ad,
     type: 2}
   m_PrefabInternal: {fileID: 312428275}
+--- !u!1 &1555971802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1323098589719114, guid: 99422b3a20e9f304c8f5a311771952de,
+    type: 2}
+  m_PrefabInternal: {fileID: 1746146020}
 --- !u!1 &1566372467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,22 +3813,7 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 438631842}
-    - target: {fileID: 1681334218952476, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 108708126322540192, guid: 99422b3a20e9f304c8f5a311771952de,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212036851722317274, guid: 99422b3a20e9f304c8f5a311771952de,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114772501882357472, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &1746146021 stripped
@@ -4802,6 +4773,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 114329946516584192, guid: 4398d6fdd737c254aa990ffd8e6b5454,
+        type: 2}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 1555971802}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4398d6fdd737c254aa990ffd8e6b5454, type: 2}
   m_IsPrefabAsset: 0
