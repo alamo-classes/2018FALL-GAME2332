@@ -55,6 +55,8 @@ public class EnemySwordsman : MonoBehaviour
       {
          moveCloser = false;
          swordsmanAnim.SetBool("isMoving", false);
+         swordsmanAnim.SetInteger("vertical", 0);
+         swordsmanAnim.SetInteger("horizontal", 0);
       }
       if (detectDistance <= swordAttackRange)
       {
@@ -86,11 +88,13 @@ public class EnemySwordsman : MonoBehaviour
       {
          direction.SetFacing(Direction.Facing.Up);
          swordsmanAnim.SetInteger("vertical", 1);
+         swordsmanAnim.SetInteger("horizontal", 0);
       }
       else
       {
          direction.SetFacing(Direction.Facing.Down);
          swordsmanAnim.SetInteger("vertical", -1);
+         swordsmanAnim.SetInteger("horizontal", 0);
       }
 
       if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
@@ -99,11 +103,13 @@ public class EnemySwordsman : MonoBehaviour
          {
             direction.SetFacing(Direction.Facing.Right);
             swordsmanAnim.SetInteger("horizontal", 1);
+            swordsmanAnim.SetInteger("vertical", 0);
          }
          else
          {
             direction.SetFacing(Direction.Facing.Left);
             swordsmanAnim.SetInteger("horizontal", -1);
+            swordsmanAnim.SetInteger("vertical", 0);
          }
       }
    }

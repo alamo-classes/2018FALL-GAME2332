@@ -65,6 +65,8 @@ public class FinalBoss : MonoBehaviour
       {
          moveCloser = false;
          bossAnim.SetBool("isMoving", false);
+         bossAnim.SetInteger("vertical", 0);
+         bossAnim.SetInteger("horizontal", 0);
       }
 
       if (detectDistance <= attackRange)
@@ -127,11 +129,13 @@ public class FinalBoss : MonoBehaviour
       {
          direction.SetFacing(Direction.Facing.Up);
          bossAnim.SetInteger("vertical", 1);
+         bossAnim.SetInteger("horizontal", 0);
       }
       else
       {
          direction.SetFacing(Direction.Facing.Down);
          bossAnim.SetInteger("vertical", -1);
+         bossAnim.SetInteger("horizontal", 0);
       }
 
       if (Mathf.Abs(player.position.y - transform.position.y) < Mathf.Abs(player.position.x - transform.position.x))
@@ -140,11 +144,13 @@ public class FinalBoss : MonoBehaviour
          {
             direction.SetFacing(Direction.Facing.Right);
             bossAnim.SetInteger("horizontal", 1);
+            bossAnim.SetInteger("vertical", 0);
          }
          else
          {
             direction.SetFacing(Direction.Facing.Left);
             bossAnim.SetInteger("horizontal", -1);
+            bossAnim.SetInteger("vertical", 0);
          }
       }
 
