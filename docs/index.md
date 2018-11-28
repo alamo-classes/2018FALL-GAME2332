@@ -1,3 +1,6 @@
+---
+title: Untitled Game
+---
 # Untitled Game
 
 ## Story
