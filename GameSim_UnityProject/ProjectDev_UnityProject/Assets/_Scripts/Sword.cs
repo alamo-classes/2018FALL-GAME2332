@@ -5,17 +5,17 @@ using UnityEngine;
 public class Sword : MonoBehaviour {
 
 	public float damage = 1;
+	public float swingDuration = 10;
+	public bool isAttacking;
 	public float attackCooldown = 0f;
 	public bool onCooldown;
 
+	bool isPlayerHolding;
 	float cooldownCount = 0;
-	bool isAttacking;
-   bool isPlayerHolding;
 
-	private float timerCount = 0;
 	private BoxCollider2D hitBox;
-	private Direction parent;
 	private SpriteRenderer swordImage;
+	private Direction parent;
 
 	void Start()
 	{
@@ -23,14 +23,16 @@ public class Sword : MonoBehaviour {
 		hitBox = GetComponent<BoxCollider2D>();
 		swordImage = GetComponent<SpriteRenderer>();
 		isAttacking = false;
+		hitBox.enabled = false;
+		swordImage.enabled = false;
 
-      PlayerController test = GetComponentInParent<PlayerController>();
-      if (test)
-      {
-         isPlayerHolding = true;
-      }
-      else
-         isPlayerHolding = false;
+		PlayerController test = GetComponentInParent<PlayerController>();
+		if (test)
+		{
+			isPlayerHolding = true;
+		}
+		else
+			isPlayerHolding = false;
 	}
 
 	void Update ()
@@ -39,16 +41,32 @@ public class Sword : MonoBehaviour {
 		switch(parent.GetFacing())
 		{
 		case Direction.Facing.Up:
-			this.transform.localPosition = new Vector3(.2f, .4f, 0);
+			if(!isAttacking)
+			{	
+				this.gameObject.transform.localPosition = new Vector3(.2f, .4f, 0);
+				this.gameObject.transform.localRotation = Quaternion.Euler(0, 0, 82);
+			}
 			break;
 		case Direction.Facing.Down:
-			
+			if(!isAttacking)
+			{
+				this.gameObject.transform.localPosition = new Vector3(-.2f, -.4f, 0f);
+				this.gameObject.transform.localRotation = Quaternion.Euler(0, 0, -82);
+			}
 			break;
 		case Direction.Facing.Right:
-			
+			if(!isAttacking)
+			{
+				this.gameObject.transform.localPosition = new Vector3(.4f, -.2f, 0f);
+				this.gameObject.transform.localRotation = Quaternion.Euler(0, 0, -8);
+			}
 			break;
 		case Direction.Facing.Left:
-			
+			if(!isAttacking)
+			{
+				this.gameObject.transform.localPosition = new Vector3(-.4f, .2f, 0f);
+				this.gameObject.transform.localRotation = Quaternion.Euler(0, 0, -188);
+			}
 			break;
 		default:
 			break;
@@ -91,20 +109,20 @@ public class Sword : MonoBehaviour {
 		hitBox.enabled = false;
 		swordImage.enabled = false;
 	}
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.tag == "Enemy" && isPlayerHolding)
 		{
 			other.gameObject.GetComponent<EnemyHealth>().RemoveHealth(damage);
-         Debug.Log("Hit Enemy");
+			Debug.Log("Hit Enemy");
 			//current problem: enemy can be hit twice in one swing
 		}
-      if ( other.tag == "Player" && !isPlayerHolding)
-      {
-         other.gameObject.GetComponent<PlayerHealth>().LoseHealth(damage);
+		if ( other.tag == "Player" && !isPlayerHolding)
+		{
+			other.gameObject.GetComponent<PlayerHealth>().LoseHealth(damage);
+			Debug.Log("Hit Player");
+		}
 
-         Debug.Log("Hit Player");
-      }
-      
 	}
 }
