@@ -45,12 +45,13 @@ public class FinalBoss : MonoBehaviour
       {
          LineUpShot();
       }
-      else if (inSwordRange)
-      {
-         if (detectDistance > 1f)
-            m_rigidBody.MovePosition(Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime));
-         sword.Attack();
-      }
+		else if (inSwordRange && !sword.isAttacking && !sword.onCooldown)
+		{
+			if (detectDistance > 1f)
+				m_rigidBody.MovePosition(Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime));
+			sword.Attack();
+			sword.onCooldown = true;
+		}
    }
 
    public void DetermineAction(float detectDistance)
