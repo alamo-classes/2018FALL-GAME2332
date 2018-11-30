@@ -2402,6 +2402,11 @@ Prefab:
       propertyPath: m_Name
       value: EnemySwordsman (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114374343349408654, guid: aa7e360b07c9b4648ae0438dace63191,
+        type: 2}
+      propertyPath: swordAttackRange
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa7e360b07c9b4648ae0438dace63191, type: 2}
   m_IsPrefabAsset: 0
