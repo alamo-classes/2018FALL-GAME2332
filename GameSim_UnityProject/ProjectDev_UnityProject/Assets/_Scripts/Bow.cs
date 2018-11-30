@@ -6,7 +6,8 @@ public class Bow : Item
 {
    public GameObject arrow;
    public float fireRate = 1f;
-
+   public AudioClip shotClip;
+   AudioSource shotSound;
    private Direction player;
    private float timer = 0f;
 
@@ -16,6 +17,7 @@ public class Bow : Item
    {
       boxCollider = GetComponent<BoxCollider2D>();
       player = GetComponent<Direction>();
+      shotSound = GetComponent<AudioSource>();
    }
 
    public override void Use ( )
@@ -58,6 +60,8 @@ public class Bow : Item
             break;
       }
 
+      shotSound.clip = shotClip;
+      shotSound.Play();
       GameObject bolt = Instantiate(arrow, player.transform.position + offset, Quaternion.identity) as GameObject;
       bolt.transform.rotation = Quaternion.Euler(dir);
    }
