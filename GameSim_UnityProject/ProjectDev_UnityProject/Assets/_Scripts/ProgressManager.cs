@@ -12,6 +12,14 @@ public class ProgressManager : MonoBehaviour
    bool allItems = false;
    bool finalBossDone = false;
 
+   private void Start()
+   {
+      keyItemCounter = -1;
+      hasDoubleDash = false;
+      hasRevealHiddenObjects = false;
+      bossIsDead = false;
+   }
+
    void Update()
    {
       if (keyItemCounter == 4 && hasDoubleDash && hasRevealHiddenObjects)
