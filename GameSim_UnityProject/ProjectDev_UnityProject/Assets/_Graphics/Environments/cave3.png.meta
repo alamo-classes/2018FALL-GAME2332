@@ -53,7 +53,7 @@ TextureImporter:
     21300096: cave3_48
     21300098: cave3_49
     21300100: cave3_50
-    21300102: cave3_51
+    21300102: SolidFloor
     21300104: cave3_52
     21300106: cave3_53
     21300108: cave3_54
@@ -1323,7 +1323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cave3_51
+      name: SolidFloor
       rect:
         serializedVersion: 2
         x: 96
