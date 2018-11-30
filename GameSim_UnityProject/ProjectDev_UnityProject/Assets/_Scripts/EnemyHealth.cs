@@ -6,14 +6,15 @@ public class EnemyHealth : MonoBehaviour
 {
 
    public float health;
-
    public GameObject healthOrb;
-
+   public AudioClip damagedClip;
    private SpriteRenderer spriteRenderer;
+   AudioSource damagedSound;
 
-   private void Awake ( )
+   private void Awake()
    {
       spriteRenderer = GetComponent<SpriteRenderer>();
+      damagedSound = GetComponent<AudioSource>();
    }
 
    void Update()
@@ -35,6 +36,9 @@ public class EnemyHealth : MonoBehaviour
    public void RemoveHealth(float damage = 1)
    {
       health -= damage;
+      damagedSound.clip = damagedClip;
+      damagedSound.Play();
+
       if (health > 0)
       {
          spriteRenderer.color = Color.red;
@@ -42,7 +46,7 @@ public class EnemyHealth : MonoBehaviour
       }
    }
 
-   private void ResetSpriteRenderer ( )
+   private void ResetSpriteRenderer()
    {
       spriteRenderer.color = Color.white;
    }
