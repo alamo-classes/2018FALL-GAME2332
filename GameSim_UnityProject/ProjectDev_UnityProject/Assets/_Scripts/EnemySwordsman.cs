@@ -7,8 +7,8 @@ public class EnemySwordsman : MonoBehaviour
     public float speed = 2f;
     public float detectRange = 30;
     public float swordAttackRange = 5f;
-    public bool moveCloser;
-    public bool inSwordRange;
+    bool moveCloser;
+    bool inSwordRange;
     Transform player;
     Rigidbody2D m_rigidBody;
     Direction direction;
