@@ -222,7 +222,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243550700744427642, guid: c9cbe8ff405868c479aa1a2b8ca1a0fa,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0b6c49a684fa0c74eb1f770a94ebc2ef, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -527,7 +527,6 @@ MonoBehaviour:
   health: 5
   invulnerableTime: 0
   canTakeDamage: 1
-  damagedClip: {fileID: 0}
   gameOverScreen: {fileID: 0}
 --- !u!114 &114772949304913474
 MonoBehaviour:

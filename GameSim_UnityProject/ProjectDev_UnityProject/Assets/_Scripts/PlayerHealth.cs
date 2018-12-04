@@ -11,15 +11,14 @@ public class PlayerHealth : MonoBehaviour
    public float invulnerableTime;
    public bool canTakeDamage = true;
    bool damaged = false;
-   public AudioClip damagedClip;
-   AudioSource damagedSound;
+   AudioSource deathSound;
    public GameObject gameOverScreen;
    PlayerController controls;
    SpriteRenderer spriteRenderer;
 
    void Start()
    {
-      damagedSound = GetComponent<AudioSource>();
+      deathSound = GetComponent<AudioSource>();
       controls = GetComponent<PlayerController>();
       spriteRenderer = GetComponent<SpriteRenderer>();
    }
@@ -49,8 +48,6 @@ public class PlayerHealth : MonoBehaviour
    {
       if (canTakeDamage)
       {
-         damagedSound.clip = damagedClip;
-         damagedSound.Play();
          health -= damage;
          spriteRenderer.color = Color.red;
          Invoke("ResetSpriteRenderer", .3f);
@@ -90,6 +87,6 @@ public class PlayerHealth : MonoBehaviour
    {
       controls.canMove = false;
       gameOverScreen.gameObject.SetActive(true);
-      damagedSound.Play();
+      deathSound.Play();
    }
 }

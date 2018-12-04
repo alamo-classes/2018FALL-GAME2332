@@ -397,7 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   healthOrb: {fileID: 1636348997289818, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
-  damagedClip: {fileID: 0}
+  damagedClip: {fileID: 8300000, guid: 981785f2227a3f8409d9cd41212fb09d, type: 3}
 --- !u!114 &114920600376045646
 MonoBehaviour:
   m_ObjectHideFlags: 1

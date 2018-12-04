@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2d71b4bcc52c94eaec2beb0788b3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myDirection: 1
 --- !u!114 &114813786254218596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   healthOrb: {fileID: 1636348997289818, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
-  damagedClip: {fileID: 0}
+  damagedClip: {fileID: 8300000, guid: af9b2ba02103aa44783dcbd015783fe5, type: 3}
 --- !u!212 &212081294344385654
 SpriteRenderer:
   m_ObjectHideFlags: 1
