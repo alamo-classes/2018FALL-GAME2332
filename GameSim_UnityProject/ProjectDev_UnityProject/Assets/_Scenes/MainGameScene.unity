@@ -3897,6 +3897,11 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 438631842}
+    - target: {fileID: 114517235582754196, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: swingClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f0d49c91a8043d4ca1a04aceee24cac, type: 3}
     m_RemovedComponents:
     - {fileID: 114608403853227638, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}

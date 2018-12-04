@@ -414,7 +414,7 @@ MonoBehaviour:
   isAttacking: 0
   attackCooldown: 1.5
   onCooldown: 0
-  swingClip: {fileID: 0}
+  swingClip: {fileID: 8300000, guid: 6f0d49c91a8043d4ca1a04aceee24cac, type: 3}
 --- !u!212 &212174124117761730
 SpriteRenderer:
   m_ObjectHideFlags: 1
