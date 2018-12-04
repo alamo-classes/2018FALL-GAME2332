@@ -384,7 +384,7 @@ MonoBehaviour:
   itemImage: {fileID: 0}
   arrow: {fileID: 1382790132733372, guid: e67ec08c17b42e046ada1ea94e6cb2c8, type: 2}
   fireRate: 1
-  shotClip: {fileID: 0}
+  shotClip: {fileID: 8300000, guid: 5632c608ad2641449acf229d62680612, type: 3}
 --- !u!114 &114062056991257316
 MonoBehaviour:
   m_ObjectHideFlags: 1
