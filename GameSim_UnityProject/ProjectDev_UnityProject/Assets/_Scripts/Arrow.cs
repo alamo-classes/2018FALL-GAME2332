@@ -13,7 +13,8 @@ public class Arrow : MonoBehaviour
    // Use this for initialization
    void Awake ( )
    {
-      trajectory = new Vector2(speed, 0f);
+      //trajectory = new Vector2(speed, 0f);
+      trajectory = new Vector2(0f, speed);
       Invoke("SelfDestruct", lifeSpan);
    }
 
