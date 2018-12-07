@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114537634140787130}
   - component: {fileID: 50262117199448708}
   - component: {fileID: 95763562473337442}
+  - component: {fileID: 82439667337610722}
   m_Layer: 0
   m_Name: EnemyArcher
   m_TagString: Enemy
@@ -92,6 +93,101 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!82 &82439667337610722
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1789411458710552}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95763562473337442
 Animator:
   serializedVersion: 3
@@ -124,6 +220,7 @@ MonoBehaviour:
   itemImage: {fileID: 0}
   arrow: {fileID: 1382790132733372, guid: e67ec08c17b42e046ada1ea94e6cb2c8, type: 2}
   fireRate: 2
+  shotClip: {fileID: 8300000, guid: 5632c608ad2641449acf229d62680612, type: 3}
 --- !u!114 &114283730828362058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -147,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2d71b4bcc52c94eaec2beb0788b3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myDirection: 1
 --- !u!114 &114813786254218596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,6 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   healthOrb: {fileID: 1636348997289818, guid: 254e99c1e1773914a81d0471ac498520, type: 2}
+  damagedClip: {fileID: 8300000, guid: af9b2ba02103aa44783dcbd015783fe5, type: 3}
 --- !u!212 &212081294344385654
 SpriteRenderer:
   m_ObjectHideFlags: 1
