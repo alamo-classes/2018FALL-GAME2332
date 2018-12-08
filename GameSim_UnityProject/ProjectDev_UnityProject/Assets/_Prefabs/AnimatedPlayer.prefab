@@ -110,8 +110,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1008830011938778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.05, z: 0}
-  m_LocalScale: {x: 4.24, y: 2.53, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_Children: []
   m_Father: {fileID: 4568279569186486}
   m_RootOrder: 3
@@ -543,6 +543,7 @@ MonoBehaviour:
   villageTheme: {fileID: 8300000, guid: b65ed24d9d5a22743b2e5b17b794e1ae, type: 3}
   inCombatTheme: {fileID: 8300000, guid: 1be1c3edd5271f146937c2293ba07d8a, type: 3}
   outOfCombatTheme: {fileID: 8300000, guid: b402d76ddc4c75142ae4b42d2a5e0a6d, type: 3}
+  transitionTime: 0.5
 --- !u!114 &114629886539912364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -745,13 +746,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: e1026372771f4d244970459a9dbd83b0, type: 3}
-  m_Color: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0.9098039}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 39d2aa2e724fc9f4eba37d6755dad561, type: 3}
+  m_Color: {r: 0.7924528, g: 0.7064165, b: 0.40744036, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.08, y: 0.14}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
