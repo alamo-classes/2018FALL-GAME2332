@@ -3577,7 +3577,7 @@ Prefab:
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
       propertyPath: dialogue.Array.data[3]
-      value: 1Maybe the shaman will know what to do
+      value: Maybe the shaman will know what to do.
       objectReference: {fileID: 0}
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
@@ -4316,12 +4316,12 @@ Prefab:
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: They knew, I don't know how but they knew!!!
+      value: They knew. I don't know how but they knew!!!
       objectReference: {fileID: 0}
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: They are here for the acceint relics the gods left behind
+      value: They are here for the ancient relics the gods left behind.
       objectReference: {fileID: 0}
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
@@ -4331,7 +4331,7 @@ Prefab:
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
       propertyPath: dialogue.Array.data[3]
-      value: Gather the relics and chance them off this island!
+      value: Gather the relics and chase them off this island!
       objectReference: {fileID: 0}
     - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
         type: 2}
