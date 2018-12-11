@@ -701,6 +701,131 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9ebe5e6b1ca540a933c79fa673987, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &206823023
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.441
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.217
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739000372498826, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_Name
+      value: Generic NPC (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212593551010980362, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5e75ac019ccf404fb0e7c23ddfec859,
+        type: 3}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1751805123}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 2129125030}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: I alwas feel better sitting next to the fire.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: I's so warm!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: You should come here to rest!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: I'd be a lot happier and a lot warmer with a belly full of mead.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[4]
+      value: I am sworn to carry your burdens
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 58742980965452026, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &221018687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1618,11 @@ Transform:
   m_Father: {fileID: 1957897065}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &543197788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505061889284222, guid: b14ceee12b011e04dab0f918404bdf77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1280147987}
 --- !u!1 &571481012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,6 +1755,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4382899510264622, guid: aa7e360b07c9b4648ae0438dace63191,
     type: 2}
   m_PrefabInternal: {fileID: 603120199}
+--- !u!114 &606831568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114829801943466554, guid: b14ceee12b011e04dab0f918404bdf77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1280147987}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &771270527
 Prefab:
   m_ObjectHideFlags: 0
@@ -2611,7 +2747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094664953
 GameObject:
@@ -3151,6 +3287,103 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b474c2fcb3e10324c87f6ea81715b3ce, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1280147987
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739000372498826, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_Name
+      value: Generic NPC (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212593551010980362, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a98e60f96ed65d845b4d0efcf5dac519,
+        type: 3}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 543197788}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 606831568}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: His eyes, I saw his eyes... Don't... look...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: He burned it, it's all gone. What are we going to do?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: Fire, so much fire... We can't stop that.. so much fire...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[4]
+      value: Be careful, there are many dangers out there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 58742980965452026, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.99
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1284407569
 Prefab:
   m_ObjectHideFlags: 0
@@ -3289,6 +3522,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
       propertyPath: m_LocalPosition.x
       value: -5.94
@@ -3320,6 +3558,31 @@ Prefab:
     - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
       propertyPath: m_RootOrder
       value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: The old village has been burned down, what are we going to do?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: You don't want to go back, there's nothing left for us there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: Is there any hope for us?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: Maybe the shaman will know what to do.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[4]
+      value: I am sworn to carry your burdens
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
@@ -3687,6 +3950,16 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1746146020}
   m_Script: {fileID: 11500000, guid: 994ecb0b6fbf5264e88870b1b67ee870, type: 3}
+--- !u!1 &1751070855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505061889284222, guid: b14ceee12b011e04dab0f918404bdf77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1891420775}
+--- !u!1 &1751805123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505061889284222, guid: b14ceee12b011e04dab0f918404bdf77,
+    type: 2}
+  m_PrefabInternal: {fileID: 206823023}
 --- !u!1001 &1766352400
 Prefab:
   m_ObjectHideFlags: 0
@@ -3778,6 +4051,12 @@ Transform:
   m_Father: {fileID: 571481013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1785397961 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114829801943466554, guid: b14ceee12b011e04dab0f918404bdf77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1891420775}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1786246549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,6 +4271,103 @@ Transform:
   m_Father: {fileID: 571481013}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1891420775
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739000372498826, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_Name
+      value: Generic NPC (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212593551010980362, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 86f9c852f60ba304fa56cee62998abcf,
+        type: 3}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1751070855}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1785397961}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: They knew. I don't know how but they knew!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: They are here for the ancient relics the gods left behind.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: You must stop them, you are the only one who can.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: Gather the relics and chase them off this island!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094725595962320, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: dialogue.Array.data[4]
+      value: Be careful, there are many dangers out there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 61446855299171302, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 58742980965452026, guid: b14ceee12b011e04dab0f918404bdf77,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066014490224852, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b14ceee12b011e04dab0f918404bdf77, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1922675038
 Prefab:
   m_ObjectHideFlags: 0
@@ -4467,7 +4843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2091418602
 Prefab:
@@ -4568,3 +4944,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4818225867494054, guid: 67539e410cffab6408f9e040ab0801ad,
     type: 2}
   m_PrefabInternal: {fileID: 2105501460}
+--- !u!114 &2129125030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114829801943466554, guid: b14ceee12b011e04dab0f918404bdf77,
+    type: 2}
+  m_PrefabInternal: {fileID: 206823023}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
