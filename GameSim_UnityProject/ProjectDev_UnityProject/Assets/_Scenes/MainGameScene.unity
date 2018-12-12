@@ -4005,6 +4005,16 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 438631842}
+    - target: {fileID: 212821975603751546, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212948265274552654, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}
   m_IsPrefabAsset: 0
