@@ -2765,6 +2765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069144325}
   - component: {fileID: 1069144324}
+  - component: {fileID: 1069144326}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -2796,6 +2797,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069144326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069144323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8531a900fa5284986e21cd25b77c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094664953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,6 +4057,30 @@ Prefab:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 438631842}
+    - target: {fileID: 114772949304913474, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: afterImageUp
+      value: 
+      objectReference: {fileID: 1507615246251866, guid: 1455e729104a62848ac9a6ab2452d4a8,
+        type: 2}
+    - target: {fileID: 114772949304913474, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: afterImageDown
+      value: 
+      objectReference: {fileID: 1289567266437380, guid: e2ed47a016c5358458a9a8e042a2c624,
+        type: 2}
+    - target: {fileID: 114772949304913474, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: afterImageLeft
+      value: 
+      objectReference: {fileID: 1761707222000292, guid: d095d2797aaf7914da0a5c4d6f02145f,
+        type: 2}
+    - target: {fileID: 114772949304913474, guid: 99422b3a20e9f304c8f5a311771952de,
+        type: 2}
+      propertyPath: afterImageRight
+      value: 
+      objectReference: {fileID: 1506600618828750, guid: 367f28e27c4699c4e9bb5bd79ae4da78,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99422b3a20e9f304c8f5a311771952de, type: 2}
   m_IsPrefabAsset: 0

@@ -15,9 +15,12 @@ public class PlayerController : MonoBehaviour
    float timer;
    bool doubleDash = false;
    bool canDoubleDash = false;
+   public GameObject afterImageUp;
+   public GameObject afterImageDown;
+   public GameObject afterImageLeft;
+   public GameObject afterImageRight;
    ProgressManager progressManager;
    public static int enemiesInRange = 0;
-
 
    void Awake()
    {
@@ -72,12 +75,22 @@ public class PlayerController : MonoBehaviour
    void Dash(float h, float v)
    {
       Vector2 movement = new Vector2(h, v);
+      GameObject afterImage = null;
 
       if (doubleDash)
       {
          if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
          {
             playerRigidbody.AddForce(movement * dashSpeed);
+            if (v > 0)
+               afterImage = Instantiate(afterImageUp, gameObject.transform);
+            else if (v < 0)
+               afterImage = Instantiate(afterImageDown, gameObject.transform);
+            if (h > 0)
+               afterImage = Instantiate(afterImageLeft, gameObject.transform);
+            else if (h < 0)
+               afterImage = Instantiate(afterImageRight, gameObject.transform);
+            Destroy(afterImage, 0.5f);
             timer = 0f;
             canDoubleDash = true;
             //Debug.Log("First dash...");
@@ -85,6 +98,15 @@ public class PlayerController : MonoBehaviour
          else if (Input.GetKeyDown(KeyCode.Space) && canDoubleDash)
          {
             playerRigidbody.AddForce(movement * dashSpeed);
+            if (v > 0)
+               afterImage = Instantiate(afterImageUp, gameObject.transform);
+            else if (v < 0)
+               afterImage = Instantiate(afterImageDown, gameObject.transform);
+            if (h > 0)
+               afterImage = Instantiate(afterImageLeft, gameObject.transform);
+            else if (h < 0)
+               afterImage = Instantiate(afterImageRight, gameObject.transform);
+            Destroy(afterImage, 0.5f);
             canDoubleDash = false;
             //Debug.Log("Second dash...");
          }
@@ -94,6 +116,15 @@ public class PlayerController : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.Space) && timer >= timeBetweenDashes)
          {
             playerRigidbody.AddForce(movement * dashSpeed);
+            if (v > 0)
+               afterImage = Instantiate(afterImageUp, gameObject.transform);
+            else if (v < 0)
+               afterImage = Instantiate(afterImageDown, gameObject.transform);
+            if (h > 0)
+               afterImage = Instantiate(afterImageLeft, gameObject.transform);
+            else if (h < 0)
+               afterImage = Instantiate(afterImageRight, gameObject.transform);
+            Destroy(afterImage, 0.5f);
             timer = 0f;
             //Debug.Log("Single dash...");
          }

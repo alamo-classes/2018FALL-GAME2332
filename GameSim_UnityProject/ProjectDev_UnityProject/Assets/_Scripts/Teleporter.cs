@@ -24,5 +24,6 @@ public class Teleporter : Item
       //Should it be interruptible?
       player.transform.position = destination.transform.position;
       camera.transform.position = cameraDestination.transform.position;
+      AudioManager.inVillage = true;
    }
 }
