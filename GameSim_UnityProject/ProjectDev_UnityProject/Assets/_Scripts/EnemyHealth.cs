@@ -24,6 +24,11 @@ public class EnemyHealth : MonoBehaviour
          GameObject orb = Instantiate(healthOrb);
          orb.GetComponent<HealthOrb>().healingPoints = Random.Range(1, 2);
          orb.gameObject.transform.position = this.transform.position;
+
+         FinalBoss boss = GetComponent<FinalBoss>();
+         if (boss)
+            ProgressManager.bossIsDead = true;
+
          Destroy(gameObject);
       }
    }
