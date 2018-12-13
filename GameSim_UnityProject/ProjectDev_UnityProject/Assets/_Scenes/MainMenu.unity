@@ -425,7 +425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 645.9, y: -400}
+  m_AnchoredPosition: {x: 645.9, y: -438.2}
   m_SizeDelta: {x: 1260.1, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135912994
@@ -727,8 +727,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 883.4001, y: -699.9974}
-  m_SizeDelta: {x: 1734.9, y: 120}
+  m_AnchoredPosition: {x: 883.4001, y: -771.8}
+  m_SizeDelta: {x: 1734.9, y: 176.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &305712644
 MonoBehaviour:
@@ -763,6 +763,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Zabin and Jetrel:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/camp-fire-animation-for-rpgs-finished'
 --- !u!222 &305712645
@@ -1169,7 +1171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 729.6, y: -400.00232}
+  m_AnchoredPosition: {x: 729.6, y: -512.3}
   m_SizeDelta: {x: 1427.4, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &637021855
@@ -1308,7 +1310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 676.9, y: -250.00473}
+  m_AnchoredPosition: {x: 676.9, y: -285.3}
   m_SizeDelta: {x: 1321.9, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656575539
@@ -1988,8 +1990,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 720, y: -400.00232}
-  m_SizeDelta: {x: 1408.1, y: 120}
+  m_AnchoredPosition: {x: 720, y: -434.5}
+  m_SizeDelta: {x: 1408.1, y: 170.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &888977697
 MonoBehaviour:
@@ -2024,6 +2026,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Chabull:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/trees-and-bushes'
 --- !u!222 &888977698
@@ -3474,8 +3478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 512.4, y: -250.00473}
-  m_SizeDelta: {x: 993, y: 120}
+  m_AnchoredPosition: {x: 713.42, y: -342.1}
+  m_SizeDelta: {x: 1395, y: 187.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323774092
 MonoBehaviour:
@@ -3510,6 +3514,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Indigo Fenix:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/npc-monks'
 --- !u!222 &1323774093
@@ -4148,8 +4154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 869.22, y: -550}
-  m_SizeDelta: {x: 1706.5, y: 120}
+  m_AnchoredPosition: {x: 816.7, y: -600.7}
+  m_SizeDelta: {x: 1601.4, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593970721
 MonoBehaviour:
@@ -4184,6 +4190,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Evert:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/lpc-compatible-34-view-cave-interior'
 --- !u!222 &1593970722
@@ -4349,7 +4357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1661743644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4365,8 +4373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 677.8, y: -100}
-  m_SizeDelta: {x: 1323.8, y: 120}
+  m_AnchoredPosition: {x: 689.3, y: -105.4}
+  m_SizeDelta: {x: 1346.8, y: 130.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661743645
 MonoBehaviour:
@@ -4908,8 +4916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 541.1, y: -250}
-  m_SizeDelta: {x: 1050.2, y: 120}
+  m_AnchoredPosition: {x: 723.2, y: -273.09}
+  m_SizeDelta: {x: 1414.4, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1849226880
 MonoBehaviour:
@@ -4944,6 +4952,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Lorc:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/700-rpg-icons'
 --- !u!222 &1849226881
@@ -5119,7 +5129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 706.7, y: -549.9997}
+  m_AnchoredPosition: {x: 706.7, y: -604.7}
   m_SizeDelta: {x: 1381.6, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883377535
@@ -5470,8 +5480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 531.3, y: -700}
-  m_SizeDelta: {x: 1030.7, y: 120}
+  m_AnchoredPosition: {x: 805.6, y: -787.4}
+  m_SizeDelta: {x: 1579.3, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925177556
 MonoBehaviour:
@@ -5617,8 +5627,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 883.4, y: -100.00717}
-  m_SizeDelta: {x: 1734.9, y: 120}
+  m_AnchoredPosition: {x: 883.4, y: -130.5}
+  m_SizeDelta: {x: 1734.9, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933446667
 MonoBehaviour:
@@ -5653,6 +5663,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Sheep:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/alternate-lpc-character-sprites-george'
 --- !u!222 &1933446668
@@ -5694,8 +5706,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 569.17, y: -100.00717}
-  m_SizeDelta: {x: 1106.6, y: 120}
+  m_AnchoredPosition: {x: 713.4, y: -128.1}
+  m_SizeDelta: {x: 1395.1, y: 176.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963299835
 MonoBehaviour:
@@ -5730,6 +5742,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Sheep & Radomir Dopieralski:
+
+    Licensed under Creative Commons: By Attribution 3.0 License
 
     https://opengameart.org/content/lpc-girl-variant-2'
 --- !u!222 &1963299836
